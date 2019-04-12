@@ -1,0 +1,94 @@
+{% extends 'base.html' %}
+
+{% block title %} {{ title }}{{ block.super }}{% endblock title %}
+
+{% block content %}
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="card-title">
+                            <div class="d-flex align-items-center">
+                                <h1>{{ question.title }}</h1>
+                                <div class="ml-auto">
+                                    <a href="{% url 'qa:home' %}" class="btn btn-outline-secondary">
+                                        Back to all Questions</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <div class="media">
+                            <div class="d-fex flex-column vote-controls">
+                                {#                                {{ vote_type }}#}
+                                {#  {% if request.user.question_votes.get(question=question) %} {% endif %}#}
+                                <a title="This question is useful"
+                                   class="vote-up {% if request.user.is_authenticated and voted and vote_type == 'upvote' %}''{% else %}off{% endif %}"
+                                   onclick="event.preventDefault(); document.getElementById('up-vote-question-{{ question.id }}').submit();">
+                                    <i class="fas fa-caret-up fa-3x"></i>
+                                </a>
+                                <form id="up-vote-question-{{ question.id }}"
+                                      action="/questions/{{ question.id }}/upvote" method="POST" style="display:none;">
+                                    {% csrf_token %}
+                                    <input type="hidden" name="vote" value="1">
+                                    <input type="hidden" name="type" value="downvote">
+                                </form>
+
+                                {% if votes_count.vote__sum > 0 %}
+                                    <span class="votes-count">{{ votes_count.vote__sum }}</span>
+                                {% else %}
+                                    <span class="votes-count">0</span>
+                                {% endif %}
+
+                                <a title="This question is not useful"
+                                   class="vote-down {% if request.user.is_authenticated and voted and vote_type == 'downvote' %}''{% else %}off{% endif %}"
+                                   onclick="event.preventDefault(); document.getElementById('down-vote-question-{{ question.id }}').submit();">
+                                    <i class="fas fa-caret-down fa-3x"></i>
+                                </a>
+                                <form id="down-vote-question-{{ question.id }}"
+                                      action="/questions/{{ question.id }}/downvote" method="POST"
+                                      style="display:none;">
+                                    {% csrf_token %}
+                                    <input type="hidden" name="vote" value="-1">
+                                    <input type="hidden" name="type" value="downvote">
+                                </form>
+
+                                <a title="Click to mark as favorite question (Click again to undo)"
+                                   class="favorite mt-2 favorited">
+                                    <i class="fas fa-star fa-2x"></i>
+                                    <span class="favorites-count">1</span>
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                {{ question.body }}
+                                <div class="clearfix"></div>
+                                {% if request.user == question.user %}
+                                    <a href="{% url 'qa:questions-edit' question.slug %}"
+                                       class="btn btn-sm btn-outline-info">Edit</a>
+                                {% endif %}
+                                <div class="float-right">
+                                    <span class="text-muted">Asked By {{ question.created_at|timesince }} ago</span>
+                                    <div class="media mt-2">
+                                        <a href="" class="pr-2">
+                                            <img src="{{ "https://www.gravatar.com/avatar/{}?s=32" }}">
+                                        </a>
+                                        <div class="media-body mt-1">
+                                            <a href="">{{ question.user.username }}</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        {% include 'answers/_index.html' with answers=question.answer.all %}
+        {% include 'answers/_create.html' %}
+    </div>
+
+{% endblock %}

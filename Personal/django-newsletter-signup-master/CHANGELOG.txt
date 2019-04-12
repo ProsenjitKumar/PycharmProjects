@@ -1,0 +1,45 @@
+=== 0.6.X (ongoing) ===
+
+- Django 2.0 & Python 3 compatibility
+- Fixed django_libs.utils.email import to prevent deprecation warning
+
+=== 0.5 ===
+
+- Fixed verification view
+- Made sure that `initial_source` and `initial_referer` really only get saved
+  in the session when the user visits the site for the first time.
+- Added new field `current_referer`
+- Bumped to 100% test coverage (but had to cheat in one test)
+
+=== 0.4 ===
+
+- Prepared app for Django 1.10
+- Fixed email creation and ajax template response
+- Improved admins
+- Fixed MANIFEST.in
+- re-setting the state of the modal to not shown when forcing the modal
+- Fixed ``NEWSLETTER_SIGNUP_FORCE_MODAL`` setting
+- Added ``has_seen_modal`` template tag
+
+=== 0.3 ===
+
+- Added setting to toggle if name is required for newsletter signup (default is
+  False = only email required)
+- Added setting to toggle verification process (default is False = not required)
+- Extended forms and views to allow optional verification
+- Simplified NewsletterSignupView
+- Added NewsletterSignupSuccessView
+- Updated NewsletterSignup model
+    - added first_name, last_name, source and referer field
+    - added descriptors for compatibility with projects using creation_date
+      instead of signup_date
+- Made the app ready for Django 1.8-1.9 and Python2.7-3.5
+- Entirely recreated migrations for Django>1.8
+
+=== 0.2 ===
+
+- added check_newsletter_signups command
+- improved admin
+
+=== 0.1 ===
+- Initial commit

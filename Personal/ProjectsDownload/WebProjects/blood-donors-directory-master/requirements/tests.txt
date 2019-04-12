@@ -1,0 +1,12 @@
+argparse==1.4.0
+codecov==2.0.5
+coverage==4.3.4
+freezegun==0.3.8
+pluggy==0.4.0
+py==1.4.33
+python-dateutil==2.6.0
+requests==2.13.0
+six==1.10.0
+tox-travis==0.8
+tox==2.6.0
+virtualenv==15.1.0

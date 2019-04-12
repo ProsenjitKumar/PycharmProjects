@@ -1,0 +1,1054 @@
+
+
+
+    <!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"1c4ad3c0b9","applicationID":"12154955","transactionName":"JQxfFxcLCFhXRhpDRQkRVEwWEAtGV2tTQl4IF0JMFgwLQw==","queueTime":7,"applicationTime":358,"agent":""}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(3),u=e(4),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],t),e}finally{f.emit("fn-end",[c.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){if(!o)return!1;if(e!==o)return!1;if(!n)return!0;if(!i)return!1;for(var t=i.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var u=navigator.userAgent,f=u.match(a);f&&u.indexOf("Chrome")===-1&&u.indexOf("Chromium")===-1&&(o="Safari",i=f[1])}n.exports={agent:o,version:i,match:r}},{}],3:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],4:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],5:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=v(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||o(t)}function w(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:l,addEventListener:l,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(3),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!E++){var e=x.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+x.offset],null,"api");var t=l.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===l.readyState&&i()}function i(){f("mark",["domContent",a()+x.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-x.offset}var u=(new Date).getTime(),f=e("handle"),c=e(3),s=e("ee"),p=e(2),d=window,l=d.document,m="addEventListener",v="attachEvent",g=d.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:g,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1099.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),x=n.exports={offset:u,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),l[m]?(l[m]("DOMContentLoaded",i,!1),d[m]("load",r,!1)):(l[v]("onreadystatechange",o),d[v]("onload",r)),f("mark",["firstbyte",u],null,"api");var E=0,O=e(5)},{}]},{},["loader"]);</script>
+		<!-- Title here -->
+		<title>posh n purple</title>
+		<!-- Description, Keywords and Author -->
+		<meta name="description" content='Welcome to posh n purple'>
+		<meta name="keywords" content='Online store, ecommerce'>
+		<meta name="author" content="Storrea">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<!-- Styles -->
+		<!-- Bootstrap CSS -->
+		<link href="https://dtt1c9id3txwq.cloudfront.net/themes/1722/assets/stylesheets/bootstrap.min.css?1461309236" rel="stylesheet">
+		<!-- Font awesome CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+		<!-- Magnific Popup -->
+		<link href="https://dtt1c9id3txwq.cloudfront.net/themes/1722/assets/stylesheets/magnific-popup.css?1461309235" rel="stylesheet">
+		<!-- Owl carousel -->
+		<link href="https://dtt1c9id3txwq.cloudfront.net/themes/1722/assets/stylesheets/owl.carousel.css?1461309235" rel="stylesheet">
+		
+		<!-- CSS for this page -->
+		<!-- Ecommerce -->
+		<link href="https://dtt1c9id3txwq.cloudfront.net/themes/1722/assets/stylesheets/ecommerce.css?1461309236" rel="stylesheet">
+		
+		<!-- Base style -->
+		<link href="https://dtt1c9id3txwq.cloudfront.net/themes/1722/assets/stylesheets/style.css?1461309234" rel="stylesheet">
+		<!-- Skin CSS -->
+		<link href="https://dtt1c9id3txwq.cloudfront.net/themes/1722/assets/stylesheets/skin.css?1461309250" rel="stylesheet" id="color_theme">
+		
+		<!-- Custom CSS. Type your CSS code in custom.css file -->
+		<link href="https://dtt1c9id3txwq.cloudfront.net/themes/1722/assets/stylesheets/custom.css?1461309236" rel="stylesheet">
+		
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="https://dtt1c9id3txwq.cloudfront.net/themes/1722/assets/images/fav.ico?1461309245">
+	</head>
+	
+	<!-- Add class "boxed" along with body for boxed layout. -->
+	<!-- Add "pattern-x" (1 to 5) for background patterns. -->
+	<!-- Add "img-x" (1 to 5) for background images. -->
+	<body>
+	
+		<!-- Outer Starts -->
+		<div class="outer">
+			
+			<!-- Top bar starts -->
+			<div class="top-bar">
+				
+						<div style=" color:#FFFFFF ; margin-top:-6px ; font-size: 15px"><marquee scrollamount="4" bgcolor=#23bcce loop="true" direction="left" width="100%" height="30" align= "middle"><strong>Welcome</strong></marquee></div>
+				
+				<div class="container">
+					<!-- Contact starts -->
+					<div class="tb-contact pull-left">
+						<!-- Email -->
+						<i class="fa fa-envelope color"></i> &nbsp; <a href="mailto:contact@domain.com">sinthe_92@yahoo.com</a>
+						&nbsp;&nbsp;  
+						<!-- Phone -->
+						<i class="fa fa-phone color"></i> &nbsp; 123 456 7890
+						
+					</div>
+					<div class="tb-contact pull-left">
+						
+							&nbsp;&nbsp;&nbsp;&nbsp;
+							
+								<a href=/customers/sign_in class="color"><b>Log In</b></a> | <a href=/customers/sign_up class="color"><b>Sign Up</b></a>
+							
+						
+					</div>
+					<!-- Contact ends -->
+					
+					<!-- Shopping kart starts -->
+					<div class="tb-shopping-cart pull-right">
+						<!-- Link with badge -->
+						<a href="#" class="btn btn-white btn-xs b-dropdown"><i class="fa fa-shopping-cart"></i> <i class="fa fa-angle-down color"></i> <span class="badge badge-color">0</span></a>
+						<!-- Dropdown content with item details -->
+						<div class="b-dropdown-block">
+							<!-- Heading -->
+							<h4><i class="fa fa-shopping-cart color"></i> Your Items (0)</h4>
+
+							<ul class="list-unstyled">
+								<!-- Item 1 -->
+								
+							</ul>
+							
+						</div>
+					</div>
+					<!-- Shopping kart ends -->
+					
+			
+					
+					<!-- Search section for responsive design -->
+					<div class="tb-search pull-left">
+						<a href="#" class="b-dropdown"><i class="fa fa-search square-2 rounded-1 bg-color white"></i></a>
+						<div class="b-dropdown-block">
+							<form role="form" action=/search>
+								<!-- Input Group -->
+								<div class="input-group">
+									<input type="text" class="form-control" name="search" placeholder="Type Something">
+									<span class="input-group-btn">
+										<input class="btn btn-color" type="submit">Search</input>
+									</span>
+								</div>
+							</form>
+							
+						</div>
+					</div>
+					<!-- Search section ends -->
+					
+					<!-- Social media starts -->
+					<div class="tb-social pull-right">
+						<div class="brand-bg text-right">
+							<!-- Brand Icons -->
+							
+								<a href=https://www.facebook.com/mystorrea class="facebook" target="_blank"><i class="fa fa-facebook square-2 rounded-1"></i></a>
+							
+							
+								<a href=https://www.facebook.com/mystorrea class="twitter" target="_blank"><i class="fa fa-twitter square-2 rounded-1"></i></a>
+							
+							
+								<a href=https://www.facebook.com/mystorrea class="google-plus" target="_blank"><i class="fa fa-google-plus square-2 rounded-1"></i></a>
+							
+							
+								<a href=https://www.facebook.com/mystorrea class="pinterest" target="_blank"><i class="fa fa-pinterest square-2 rounded-1"></i></a>
+							
+						</div>
+					</div>
+					<!-- Social media ends -->
+					
+					<div class="clearfix"></div>
+				</div>
+			</div>
+			
+			<!-- Top bar ends -->
+			
+			<!-- Header two Starts -->
+			<div class="header-2">
+			
+				<!-- Container -->
+				<div class="container">
+					<div class="row">
+						<div class="col-md-2">
+							<!-- Logo section -->
+							<div class="logo">
+								
+									<a href="/"><img src=https://dtt1c9id3txwq.cloudfront.net/themes/1722/assets/images/IMG_7351-720x420.jpeg?1453628045 alt=posh n purple style="max-height:40px; max-width:166px;"></a>
+								
+							</div>
+						</div>
+
+						<div class="col-md-9">
+						
+							<!-- Navigation starts.  -->
+							<div class="navy">			
+								<ul>
+									
+										
+											<li >
+												<a href=/pages/2574-About-Us >About Us</a>
+											</li>
+										
+									
+										
+											<li >
+												<a href=/ >Home</a>
+											</li>
+										
+									
+										
+											<li >
+												<a href=/products >Products</a>
+											</li>
+										
+									
+										
+											<li >
+												<a href=/contact_us >Contact Us</a>
+											</li>
+										
+									
+										
+											<li >
+												<a href=/cart >Cart</a>
+											</li>
+										
+									
+								</ul>
+							</div>							
+							<!-- Navigation ends -->
+							
+						</div>
+						
+						<div class="col-md-1">
+							
+							<!-- Search section -->
+							<div class="head-search pull-right">
+								<a href="#" class="b-dropdown"><i class="fa fa-search square-2 rounded-1 bg-color white"></i></a>
+								<div class="b-dropdown-block">
+									<form role="form" action=/search>
+										<!-- Input Group -->
+										<div class="input-group">
+											<input type="text" class="form-control" name="search" placeholder="Type Something">
+											<span class="input-group-btn">
+												<input class="btn btn-color" type="submit">Search</input>
+											</span>
+										</div>
+									</form>
+								</div>
+							</div>
+							<!-- Search section ends -->
+							<div class="clearfix"></div>
+							
+						</div>
+						
+					</div>
+				</div>
+			</div>
+	
+			<!-- Header two ends -->
+			<!-- dynamic content here ======== -->
+			
+			
+    <!-- Main content starts -->
+<div class="main-block">
+
+<!-- Shopping Items -->
+<div class="ecommerce">
+
+	<!-- Carousel -->
+
+	<!-- Bootstrap carousel usage 
+		Bootstrap carousel should have id. Below i am using "bs-carousel-X". Where "X" denotes number". If a page has more than 1 carousel, then add the new carousel with the id "bs-carousel-1", "bs-carousel-2". You also need to update the id in, "carousel indicators" section and "carousel control" section.  
+		
+		Carousel comes with 3 main data attributes which you can customize. They are...
+		data-interval - Time delay between item cycle. Default value "5000".
+		data-pause - Pause on hover. Default value "pause".
+		data-wrap - Continues cycle or stop at the end. Default value "true".
+	-->
+
+	<!-- Outer layer -->
+	<div id="bs-carousel-1" class="carousel carousel-two slide" data-ride="carousel" data-interval="5000" data-pause="hover" data-wrap="true">
+		<!-- Bootstrap indicators. If you don't need indicators, remove the below section -->
+		<ol class="carousel-indicators">
+			<li data-target="#bs-carousel-1" data-slide-to="0" class="active"></li>
+			<li data-target="#bs-carousel-1" data-slide-to="1"></li>
+			<li data-target="#bs-carousel-1" data-slide-to="2"></li>
+		</ol>
+		<!-- Slides. You can also add captions -->
+		<div class="carousel-inner">
+			<!-- Item, First item should have extra class "active" -->
+			<div class="item active">
+				<!-- Image -->
+				<img src=https://dtt1c9id3txwq.cloudfront.net/themes/1722/assets/images/pnp1.jpg?1453640416 alt="posh n purple">
+			</div>
+			<div class="item">
+				<img src=https://dtt1c9id3txwq.cloudfront.net/themes/1722/assets/images/pnp2.jpg?1453640416 alt="posh n purple">
+			</div>
+			<div class="item">
+				<img src=https://dtt1c9id3txwq.cloudfront.net/themes/1722/assets/images/pnp3.jpg?1453640416 alt="posh n purple">
+			</div>
+		</div>
+		<!-- Carousel controls (arrows). If you don't need controls, remove the below section -->
+		<a class="left carousel-control" href="#bs-carousel-1" role="button" data-slide="prev">
+			<span class="fa fa-chevron-left"></span>
+		</a>
+		<a class="right carousel-control" href="#bs-carousel-1" role="button" data-slide="next">
+			<span class="fa fa-chevron-right"></span>
+		</a>
+	</div>
+
+	
+	<div class="container">		
+
+	  <!-- Information Block -->
+	  	
+		<div class="info">
+			<div class="row tiles ad-banner-img">
+				<div class="col-md-6 col-sm-12">
+					<a href="/"><img src=https://dtt1c9id3txwq.cloudfront.net/themes/1722/assets/images/pnpad1.jpg?1453640642 class="img-responsive"></a>
+				</div>
+				<div class="col-md-6 col-sm-12">
+					<a href="/"><img src=https://dtt1c9id3txwq.cloudfront.net/themes/1722/assets/images/pnpad2.jpg?1453640467 class="img-responsive"></a>
+				</div>
+			</div>
+		</div>
+		
+		<!-- Information block ends -->
+
+		<!-- Shopping items content -->
+		<div class="shopping-content">
+			<!-- Block heading two -->
+			<div class="block-heading-two">
+					<h3><span>Featured Items</span>
+					<form action=/ method="post" class = "pull-right" >
+						<select name= "sort_by" class="form-control pull-right" onchange="this.form.submit()">
+							<option value = "id ASC" >Default Sorting</option>
+							<option value = "price DESC" >Price: High to Low</option>
+							<option value = "price ASC" >Price: Low to High</option>
+							<option value= "created_at ASC" >Sort by Newness</option>
+						</select>
+					</form>
+					</h3>
+			</div>
+			<div class="row tiles">
+					<!-- Shopping items -->
+					
+					    
+						<!--product item-->
+							<div class="col-md-3 col-sm-6">
+								<div class="shopping-item">
+									<!-- Image -->
+									
+										<a href=/product/4951-alluring-embroidered-net-kalidar-suit><img class="img-responsive" style="max-height:300px" src=https://dtt1c9id3txwq.cloudfront.net/assets/images/000/045/020/compact/alluring-embroidered-net-kalidar-suit-slsvdm1208-b.jpg?1448970953 alt="alluring embroidered net kalidar suit" /></a>
+									
+									
+									<!-- Shopping item name / Heading -->
+									<h5><a href=/product/4951-alluring-embroidered-net-kalidar-suit>alluring embroidered n...</a></h5>
+									<h4>
+										
+											<span class="price price-old" style="font-size:14px"><s>BDT 3,400.0</s></span>
+										
+										<span class="color pull-right">BDT 3,200.0</span>
+									</h4>
+									
+									<div class="clearfix"></div>
+									<!-- Buy now button -->
+									<div class="visible-xs">
+										
+											
+												<a class="btn btn-color btn-sm" href=/store/carts/add?id=4951>Add to cart</a>
+											
+										
+									</div>
+									<!-- Shopping item hover block & link -->
+									<div class="item-hover bg-color hidden-xs">
+										
+											
+												<a href=/store/carts/add?id=4951>Add to cart</a>
+											
+										
+									</div>
+									<!-- Hot tag -->
+									
+										<span class="hot-tag bg-color">SALE</span>
+									
+									
+								</div>
+							</div>
+						
+						<!--product item-->
+							<div class="col-md-3 col-sm-6">
+								<div class="shopping-item">
+									<!-- Image -->
+									
+										<a href=/product/4950-hand-embellished-kalidar><img class="img-responsive" style="max-height:300px" src=https://dtt1c9id3txwq.cloudfront.net/assets/images/000/045/018/compact/kangana-ranaut-hand-embellished-kalidar-slsfcr2001-u.jpg?1448970838 alt="hand embellished kalidar" /></a>
+									
+									
+									<!-- Shopping item name / Heading -->
+									<h5><a href=/product/4950-hand-embellished-kalidar>hand embellished kalidar</a></h5>
+									<h4>
+										
+											<span class="price price-old" style="font-size:14px"><s>BDT 2,850.0</s></span>
+										
+										<span class="color pull-right">BDT 2,800.0</span>
+									</h4>
+									
+									<div class="clearfix"></div>
+									<!-- Buy now button -->
+									<div class="visible-xs">
+										
+											
+												<a class="btn btn-color btn-sm" href=/store/carts/add?id=4950>Add to cart</a>
+											
+										
+									</div>
+									<!-- Shopping item hover block & link -->
+									<div class="item-hover bg-color hidden-xs">
+										
+											
+												<a href=/store/carts/add?id=4950>Add to cart</a>
+											
+										
+									</div>
+									<!-- Hot tag -->
+									
+										<span class="hot-tag bg-color">SALE</span>
+									
+									
+								</div>
+							</div>
+						
+						<!--product item-->
+							<div class="col-md-3 col-sm-6">
+								<div class="shopping-item">
+									<!-- Image -->
+									
+										<a href=/product/4949-peach-georgette-ankle-length-anarkali><img class="img-responsive" style="max-height:300px" src=https://dtt1c9id3txwq.cloudfront.net/assets/images/000/045/016/compact/peach-georgette-ankle-length-anarkali-suit-slsjssb01-u.jpg?1448970733 alt="peach georgette ankle length anarkali" /></a>
+									
+									
+									<!-- Shopping item name / Heading -->
+									<h5><a href=/product/4949-peach-georgette-ankle-length-anarkali>peach georgette ankle ...</a></h5>
+									<h4>
+										
+											<span class="price price-old" style="font-size:14px"><s>BDT 2,800.0</s></span>
+										
+										<span class="color pull-right">BDT 2,750.0</span>
+									</h4>
+									
+									<div class="clearfix"></div>
+									<!-- Buy now button -->
+									<div class="visible-xs">
+										
+											
+												<a class="btn btn-color btn-sm" href=/store/carts/add?id=4949>Add to cart</a>
+											
+										
+									</div>
+									<!-- Shopping item hover block & link -->
+									<div class="item-hover bg-color hidden-xs">
+										
+											
+												<a href=/store/carts/add?id=4949>Add to cart</a>
+											
+										
+									</div>
+									<!-- Hot tag -->
+									
+										<span class="hot-tag bg-color">SALE</span>
+									
+									
+								</div>
+							</div>
+						
+						<!--product item-->
+							<div class="col-md-3 col-sm-6">
+								<div class="shopping-item">
+									<!-- Image -->
+									
+										<a href=/product/4948-MB-Off-White-Colored-Striped-Shift><img class="img-responsive" style="max-height:300px" src=https://dtt1c9id3txwq.cloudfront.net/assets/images/000/045/014/compact/MB-Off-White-Colored-Striped-Shift-Dress-9537-614336-1-pdp_slider_l.jpg?1448970141 alt="MB Off White Colored Striped Shift" /></a>
+									
+									
+									<!-- Shopping item name / Heading -->
+									<h5><a href=/product/4948-MB-Off-White-Colored-Striped-Shift>MB Off White Colored S...</a></h5>
+									<h4>
+										
+											<span class="price price-old" style="font-size:14px"><s>BDT 1,100.0</s></span>
+										
+										<span class="color pull-right">BDT 950.0</span>
+									</h4>
+									
+									<div class="clearfix"></div>
+									<!-- Buy now button -->
+									<div class="visible-xs">
+										
+											
+												<a class="btn btn-color btn-sm" href=/store/carts/add?id=4948>Add to cart</a>
+											
+										
+									</div>
+									<!-- Shopping item hover block & link -->
+									<div class="item-hover bg-color hidden-xs">
+										
+											
+												<a href=/store/carts/add?id=4948>Add to cart</a>
+											
+										
+									</div>
+									<!-- Hot tag -->
+									
+										<span class="hot-tag bg-color">SALE</span>
+									
+									
+								</div>
+							</div>
+						
+						<!--product item-->
+							<div class="col-md-3 col-sm-6">
+								<div class="shopping-item">
+									<!-- Image -->
+									
+										<a href=/product/4947-vogusih-turquoise-net-gown><img class="img-responsive" style="max-height:300px" src=https://dtt1c9id3txwq.cloudfront.net/assets/images/000/045/012/compact/vogusih-turquoise-net-gown-gwusvnd1044-u.jpg?1448969604 alt="vogusih turquoise net gown" /></a>
+									
+									
+									<!-- Shopping item name / Heading -->
+									<h5><a href=/product/4947-vogusih-turquoise-net-gown>vogusih turquoise net ...</a></h5>
+									<h4>
+										
+											<span class="price price-old" style="font-size:14px"><s>BDT 4,200.0</s></span>
+										
+										<span class="color pull-right">BDT 3,800.0</span>
+									</h4>
+									
+									<div class="clearfix"></div>
+									<!-- Buy now button -->
+									<div class="visible-xs">
+										
+											
+												<a class="btn btn-color btn-sm" href=/store/carts/add?id=4947>Add to cart</a>
+											
+										
+									</div>
+									<!-- Shopping item hover block & link -->
+									<div class="item-hover bg-color hidden-xs">
+										
+											
+												<a href=/store/carts/add?id=4947>Add to cart</a>
+											
+										
+									</div>
+									<!-- Hot tag -->
+									
+										<span class="hot-tag bg-color">SALE</span>
+									
+									
+								</div>
+							</div>
+						
+						<!--product item-->
+							<div class="col-md-3 col-sm-6">
+								<div class="shopping-item">
+									<!-- Image -->
+									
+										<a href=/product/4946-navy-blue-asmita-sood--layered-><img class="img-responsive" style="max-height:300px" src=https://dtt1c9id3txwq.cloudfront.net/assets/images/000/045/010/compact/navy-blue-asmita-sood-layered-anarkali-gown-bgwskes0009-u.jpg?1448969469 alt="navy blue asmita sood  layered " /></a>
+									
+									
+									<!-- Shopping item name / Heading -->
+									<h5><a href=/product/4946-navy-blue-asmita-sood--layered->navy blue asmita sood ...</a></h5>
+									<h4>
+										
+											<span class="price price-old" style="font-size:14px"><s>BDT 3,500.0</s></span>
+										
+										<span class="color pull-right">BDT 3,200.0</span>
+									</h4>
+									
+									<div class="clearfix"></div>
+									<!-- Buy now button -->
+									<div class="visible-xs">
+										
+											
+												<a class="btn btn-color btn-sm" href=/store/carts/add?id=4946>Add to cart</a>
+											
+										
+									</div>
+									<!-- Shopping item hover block & link -->
+									<div class="item-hover bg-color hidden-xs">
+										
+											
+												<a href=/store/carts/add?id=4946>Add to cart</a>
+											
+										
+									</div>
+									<!-- Hot tag -->
+									
+										<span class="hot-tag bg-color">SALE</span>
+									
+									
+								</div>
+							</div>
+						
+						<!--product item-->
+							<div class="col-md-3 col-sm-6">
+								<div class="shopping-item">
+									<!-- Image -->
+									
+										<a href=/product/4945-cream-pure-georgette-goli-darzi-draped-gown><img class="img-responsive" style="max-height:300px" src=https://dtt1c9id3txwq.cloudfront.net/assets/images/000/045/008/compact/cream-pure-georgette-goli-darzi-draped-gown-bgw21h720011-u.jpg?1448969323 alt="cream pure georgette goli darzi draped gown" /></a>
+									
+									
+									<!-- Shopping item name / Heading -->
+									<h5><a href=/product/4945-cream-pure-georgette-goli-darzi-draped-gown>cream pure georgette g...</a></h5>
+									<h4>
+										
+											<span class="price price-old" style="font-size:14px"><s>BDT 2,100.0</s></span>
+										
+										<span class="color pull-right">BDT 1,990.0</span>
+									</h4>
+									
+									<div class="clearfix"></div>
+									<!-- Buy now button -->
+									<div class="visible-xs">
+										
+											
+												<a class="btn btn-color btn-sm" href=/store/carts/add?id=4945>Add to cart</a>
+											
+										
+									</div>
+									<!-- Shopping item hover block & link -->
+									<div class="item-hover bg-color hidden-xs">
+										
+											
+												<a href=/store/carts/add?id=4945>Add to cart</a>
+											
+										
+									</div>
+									<!-- Hot tag -->
+									
+										<span class="hot-tag bg-color">SALE</span>
+									
+									
+								</div>
+							</div>
+						
+						<!--product item-->
+							<div class="col-md-3 col-sm-6">
+								<div class="shopping-item">
+									<!-- Image -->
+									
+										<a href=/product/4944-The-Vanca-Red-Colored-Embroidered-Skater-Dress><img class="img-responsive" style="max-height:300px" src=https://dtt1c9id3txwq.cloudfront.net/assets/images/000/045/006/compact/The-Vanca-Red-Colored-Embroidered-Skater-Dress-3141-8313671-1-catalog_s.jpg?1448969203 alt="The Vanca Red Colored Embroidered Skater Dress" /></a>
+									
+									
+									<!-- Shopping item name / Heading -->
+									<h5><a href=/product/4944-The-Vanca-Red-Colored-Embroidered-Skater-Dress>The Vanca Red Colored ...</a></h5>
+									<h4>
+										
+											<span class="price price-old" style="font-size:14px"><s>BDT 1,900.0</s></span>
+										
+										<span class="color pull-right">BDT 1,750.0</span>
+									</h4>
+									
+									<div class="clearfix"></div>
+									<!-- Buy now button -->
+									<div class="visible-xs">
+										
+											
+												<a class="btn btn-color btn-sm" href=/store/carts/add?id=4944>Add to cart</a>
+											
+										
+									</div>
+									<!-- Shopping item hover block & link -->
+									<div class="item-hover bg-color hidden-xs">
+										
+											
+												<a href=/store/carts/add?id=4944>Add to cart</a>
+											
+										
+									</div>
+									<!-- Hot tag -->
+									
+										<span class="hot-tag bg-color">SALE</span>
+									
+									
+								</div>
+							</div>
+						
+						<!--product item-->
+							<div class="col-md-3 col-sm-6">
+								<div class="shopping-item">
+									<!-- Image -->
+									
+										<a href=/product/4943-Harpa-Cream-Colored-Solid-Shift-Dress><img class="img-responsive" style="max-height:300px" src=https://dtt1c9id3txwq.cloudfront.net/assets/images/000/045/004/compact/Harpa-Cream-Colored-Solid-Shift-Dress-6215-5573551-1-pdp_slider_l.jpg?1448969096 alt="Harpa Cream Colored Solid Shift Dress" /></a>
+									
+									
+									<!-- Shopping item name / Heading -->
+									<h5><a href=/product/4943-Harpa-Cream-Colored-Solid-Shift-Dress>Harpa Cream Colored So...</a></h5>
+									<h4>
+										
+											<span class="price price-old" style="font-size:14px"><s>BDT 1,250.0</s></span>
+										
+										<span class="color pull-right">BDT 1,250.0</span>
+									</h4>
+									
+									<div class="clearfix"></div>
+									<!-- Buy now button -->
+									<div class="visible-xs">
+										
+											
+												<a class="btn btn-color btn-sm" href=/store/carts/add?id=4943>Add to cart</a>
+											
+										
+									</div>
+									<!-- Shopping item hover block & link -->
+									<div class="item-hover bg-color hidden-xs">
+										
+											
+												<a href=/store/carts/add?id=4943>Add to cart</a>
+											
+										
+									</div>
+									<!-- Hot tag -->
+									
+										<span class="hot-tag bg-color">SALE</span>
+									
+									
+								</div>
+							</div>
+						
+						<!--product item-->
+							<div class="col-md-3 col-sm-6">
+								<div class="shopping-item">
+									<!-- Image -->
+									
+										<a href=/product/4942-Dorothy-Perkins-Black-Colored-Embellished-Skater-Dress><img class="img-responsive" style="max-height:300px" src=https://dtt1c9id3txwq.cloudfront.net/assets/images/000/045/002/compact/Dorothy-Perkins-Black-Colored-Embellished-Skater-Dress-4243-9554871-1-pdp_slider_l.jpg?1448968847 alt="Dorothy Perkins Black Colored Embellished Skater Dress" /></a>
+									
+									
+									<!-- Shopping item name / Heading -->
+									<h5><a href=/product/4942-Dorothy-Perkins-Black-Colored-Embellished-Skater-Dress>Dorothy Perkins Black ...</a></h5>
+									<h4>
+										
+											<span class="price price-old" style="font-size:14px"><s>BDT 1,600.0</s></span>
+										
+										<span class="color pull-right">BDT 1,500.0</span>
+									</h4>
+									
+									<div class="clearfix"></div>
+									<!-- Buy now button -->
+									<div class="visible-xs">
+										
+											
+												<a class="btn btn-color btn-sm" href=/store/carts/add?id=4942>Add to cart</a>
+											
+										
+									</div>
+									<!-- Shopping item hover block & link -->
+									<div class="item-hover bg-color hidden-xs">
+										
+											
+												<a href=/store/carts/add?id=4942>Add to cart</a>
+											
+										
+									</div>
+									<!-- Hot tag -->
+									
+										<span class="hot-tag bg-color">SALE</span>
+									
+									
+								</div>
+							</div>
+						
+						<!--product item-->
+							<div class="col-md-3 col-sm-6">
+								<div class="shopping-item">
+									<!-- Image -->
+									
+										<a href=/product/4941-Sangria-Black-Sarees><img class="img-responsive" style="max-height:300px" src=https://dtt1c9id3txwq.cloudfront.net/assets/images/000/044/855/compact/hand_embellished_border_half_n_half.jpg?1448959662 alt="Sangria Black Sarees" /></a>
+									
+									
+									<!-- Shopping item name / Heading -->
+									<h5><a href=/product/4941-Sangria-Black-Sarees>Sangria Black Sarees</a></h5>
+									<h4>
+										
+											<span class="price price-old" style="font-size:14px"><s>BDT 1,550.0</s></span>
+										
+										<span class="color pull-right">BDT 1,500.0</span>
+									</h4>
+									
+									<div class="clearfix"></div>
+									<!-- Buy now button -->
+									<div class="visible-xs">
+										
+											
+												<a class="btn btn-color btn-sm" href=/store/carts/add?id=4941>Add to cart</a>
+											
+										
+									</div>
+									<!-- Shopping item hover block & link -->
+									<div class="item-hover bg-color hidden-xs">
+										
+											
+												<a href=/store/carts/add?id=4941>Add to cart</a>
+											
+										
+									</div>
+									<!-- Hot tag -->
+									
+										<span class="hot-tag bg-color">SALE</span>
+									
+									
+								</div>
+							</div>
+						
+						<!--product item-->
+							<div class="col-md-3 col-sm-6">
+								<div class="shopping-item">
+									<!-- Image -->
+									
+										<a href=/product/4940-hand-embellished-border-half-n-half><img class="img-responsive" style="max-height:300px" src=https://dtt1c9id3txwq.cloudfront.net/assets/images/000/044/853/compact/hand-embellished-border-half-n-half-saree-sa43h131528b-l.jpg?1448959537 alt="hand embellished border half n half" /></a>
+									
+									
+									<!-- Shopping item name / Heading -->
+									<h5><a href=/product/4940-hand-embellished-border-half-n-half>hand embellished borde...</a></h5>
+									<h4>
+										
+											<span class="price price-old" style="font-size:14px"><s>BDT 20,000.0</s></span>
+										
+										<span class="color pull-right">BDT 19,900.0</span>
+									</h4>
+									
+									<div class="clearfix"></div>
+									<!-- Buy now button -->
+									<div class="visible-xs">
+										
+											
+												<a class="btn btn-color btn-sm" href=/store/carts/add?id=4940>Add to cart</a>
+											
+										
+									</div>
+									<!-- Shopping item hover block & link -->
+									<div class="item-hover bg-color hidden-xs">
+										
+											
+												<a href=/store/carts/add?id=4940>Add to cart</a>
+											
+										
+									</div>
+									<!-- Hot tag -->
+									
+										<span class="hot-tag bg-color">SALE</span>
+									
+									
+								</div>
+							</div>
+						
+				    	
+			        
+					
+				</div>
+			</div>
+			<!-- Pagination -->
+			<div class="shopping-pagination">
+				 <ul class="pagination">
+				  	
+				  	
+				    
+				    
+				    
+				    
+				  </ul>
+			</div>
+			<!-- Pagination end-->
+		</div>	
+		
+		</div>
+
+	</div>
+	
+</div>
+
+
+
+			
+			<!-- End of dynamic content here ======= -->
+      
+			<!-- Foot Starts -->
+		
+			<div class="foot">
+				<!-- Container -->
+				<div class="container">
+					<div class="row">
+						<div class="col-md-4 col-sm-6">
+							<!-- Foot Item -->
+							<div class="foot-item">
+								<!-- Heading -->
+								<h5 class="bold"><i class="fa fa-user"></i>&nbsp;&nbsp;About</h5>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+								<div class="brand-bg">
+									<!-- Social Media Icons -->
+									
+										<a href=https://www.facebook.com/mystorrea class="facebook" target="_blank"><i class="fa fa-facebook circle-3"></i></a>
+									
+									
+										<a href=https://www.facebook.com/mystorrea class="twitter" target="_blank"><i class="fa fa-twitter circle-3"></i></a>
+									
+									
+										<a href=https://www.facebook.com/mystorrea class="google-plus" target="_blank"><i class="fa fa-google-plus circle-3"></i></a>
+									
+									
+										<a href=https://www.facebook.com/mystorrea class="pinterest" target="_blank"><i class="fa fa-pinterest circle-3"></i></a>
+									
+								</div>
+								<div class="subscribe-box">
+									<h5 class="bold">Subscribe :</h5>
+									<!-- Form -->
+									<form role="form" action=/store/customers/create_newsletter_subscription>
+										<!-- Input Group -->
+										<div class="input-group">
+											<input type="email" name= "email" placeholder="Your email address" class="form-control" >
+											<span class="input-group-btn">
+												<button class="btn btn-color" type="submit">Subscribe</button>
+											</span>
+										</div>
+									</form>
+									
+								</div>
+							</div>
+						</div>	
+						<div class="col-md-4 col-sm-6">
+							<!-- Foot Item -->
+							<div class="foot-item">
+								<!-- Heading -->
+								<h5 class="bold"><i class="fa fa-info-circle"></i>&nbsp;&nbsp;Information</h5>
+								<!-- Foot Item Content -->
+								<div class="foot-item-content">
+									<ul class="list-unstyled">
+										<!-- Link -->
+										
+											<li><a href="/">Home
+										
+											<li><a href="/pages/2574">About Us
+										
+											<li><a href="/pages/2575">Terms and Conditions
+										
+											<li><a href="/store/track_orders/new">Order tracking
+										
+											<li><a href="/collection/1529">saree
+										
+									</ul>
+								</div>
+							</div>
+
+							
+							&nbsp;&nbsp;&nbsp;&nbsp;
+							
+								<a href=/customers/sign_in class="color"><b>Log In</b></a> | <a href=/customers/sign_up class="color"><b>Sign Up</b></a>
+							
+							
+
+						</div>
+						
+						<div class="col-md-4 col-sm-6">
+							<!-- Foot Item -->
+							<div class="foot-item">
+								<!-- Heading -->
+								<h5 class="bold"><i class="fa fa-building-o"></i>&nbsp;&nbsp;Contact Us</h5>
+								<!-- Foot Item Content -->
+								<div class="foot-item-content address">
+									<!-- Heading -->
+									<h6 class="bold"><i class="fa fa-home"></i>&nbsp;&nbsp;posh n purple</h6>
+									<!-- Paragraph -->
+									<p class="add">
+									   
+									   		motijeel<br/>
+									   
+									   
+									   		dhaka ,
+									   
+									   
+									   		dhaka
+									    
+									   
+									   		- 1000
+									   
+									  </p>
+									<p class="tel"> <i class="fa fa-phone"></i> Tel : 123456<br />
+									<i class="fa fa-envelope"></i>  Mail : <a href="#">sinthe_92@yahoo.com</a><br />
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<!-- Foot Ends -->
+			
+			<!-- Footer Starts -->
+			
+			<footer>
+				<!-- Container -->
+				<div class="container">
+					<!-- Footer Content -->
+						<!-- Paragraph -->
+						<p class="text-center">Copyright &copy; 2018 - <a href="/">posh n purple</a></p>
+						<p class="pull-right">Powered by - <a href="http://www.storrea.com" target="_blank">Storrea Ltd.</a></p>
+						<!-- Clearfix -->
+						<div class="clearfix"></div>
+				</div>
+			</footer>
+			
+			<!-- Footer Ends -->
+		
+		</div>
+		
+		<!-- Outer Ends -->		
+		
+		<!-- Scroll to top -->
+		<span class="totop"><a href="#"><i class="fa fa-angle-up bg-color"></i></a></span>
+		
+		<!-- Javascript files -->
+		<!-- jQuery -->
+		<script src="https://dtt1c9id3txwq.cloudfront.net/themes/1722/assets/javascripts/jquery.js?1461309240"></script>
+		<!-- Bootstrap JS -->
+		<script src="https://dtt1c9id3txwq.cloudfront.net/themes/1722/assets/javascripts/bootstrap.min.js?1461309243"></script>
+		<!-- Placeholders JS -->
+		<script src="https://dtt1c9id3txwq.cloudfront.net/themes/1722/assets/javascripts/placeholders.js?1461309238"></script>
+		<!-- Magnific Popup -->
+		<script src="https://dtt1c9id3txwq.cloudfront.net/themes/1722/assets/javascripts/jquery.magnific-popup.min.js?1461309240"></script>
+		<!-- Owl carousel -->
+		<script src="https://dtt1c9id3txwq.cloudfront.net/themes/1722/assets/javascripts/owl.carousel.min.js?1461309238"></script>
+		<!-- Respond JS for IE8 -->
+		<script src="https://dtt1c9id3txwq.cloudfront.net/themes/1722/assets/javascripts/respond.min.js?1461309238"></script>
+		<!-- HTML5 Support for IE -->
+		<script src="https://dtt1c9id3txwq.cloudfront.net/themes/1722/assets/javascripts/html5shiv.js?1461309243"></script>
+		<!-- Main JS -->
+		<script src="https://dtt1c9id3txwq.cloudfront.net/themes/1722/assets/javascripts/main.js?1461309238"></script>
+		
+		<!-- Javascript for this page -->
+		<!-- Ecommerce custom JS -->
+		<script src="https://dtt1c9id3txwq.cloudfront.net/themes/1722/assets/javascripts/ecommerce.js?1461309243"></script>
+		
+		<!-- Custom JS. Type your JS code in custom.js file -->
+		<script src="https://dtt1c9id3txwq.cloudfront.net/themes/1722/assets/javascripts/custom.js?1461309243"></script>
+
+		<script type="text/javascript" src="https://s7.addthis.com/js/300/addthis_widget.js#pubid=xa-5306f8f674bfda4c"></script>
+
+
+		
+		<!-- 
+		Style switcher. This is just for demo purpose only. 
+		If you don't want remove the below line.
+		Some of the features of style switcher won't work on offline. THey only work when you upload it to server 
+		-->
+		<!-- <script src="style-switcher/style-switcher.js"></script> -->
+		
+	</body>	
+</html>
+
+
+
+<script>
+      //$("#store-front-unpublished-modal").modal('show')
+</script>
+<script type="text/javascript">
+      // jQuery(function() {
+      // var tz = jstz.determine();
+      // $.cookie('timezone', tz.name(), { path: '/' });
+      // });
+</script>
+
+<script>
+
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-65313734-1', 'auto');
+      ga('send', 'pageview');
+      
+</script>
+
+
+
+
+
+
+
+
+
+
+

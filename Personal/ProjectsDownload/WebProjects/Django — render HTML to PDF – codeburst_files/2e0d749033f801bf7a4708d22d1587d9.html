@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html><head><title>mixins.py – Medium</title><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="twitter:widgets:csp" content="on"><meta name="robots" content="noindex"><!-- base href="https://codeburst.io/media/2e0d749033f801bf7a4708d22d1587d9?postId=41a2b9c41d16" --><style>body {text-rendering: optimizeLegibility; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-family: "ff-tisa-web-pro", Georgia, Cambria, "Times New Roman", Times, serif; font-weight: 400; color: #333332; font-size: 18px; line-height: 1.4; margin: 0; background-color: white; overflow: hidden;}iframe {max-width: 100%;}</style></head><body><style>.gist .gist-file { margin-bottom: 0 !important; }.gist { text-rendering: auto; }</style><script src="2e0d749033f801bf7a4708d22d1587d9_data/f6dba3d29db2bb10335b1bb6b680555a.js" charset="utf-8"></script><link rel="stylesheet" href="cb0cab001e8bdaee469bdf2889d84322_data/gist-embed-1564cdcc2939872e81719982075d3d93.css"><div id="gist85474150" class="gist">
+    <div class="gist-file">
+      <div class="gist-data">
+        <div class="js-gist-file-update-container js-task-list-container file-box">
+  <div id="file-mixins-py" class="file">
+    
+
+  <div itemprop="text" class="blob-wrapper data type-python ">
+      <table class="highlight tab-size js-file-line-container" data-tab-size="8">
+      <tbody><tr>
+        <td id="file-mixins-py-L1" class="blob-num js-line-number" data-line-number="1"></td>
+        <td id="file-mixins-py-LC1" class="blob-code blob-code-inner js-file-line"><span class="pl-k">from</span> django.views.generic.base <span class="pl-k">import</span> View</td>
+      </tr>
+      <tr>
+        <td id="file-mixins-py-L2" class="blob-num js-line-number" data-line-number="2"></td>
+        <td id="file-mixins-py-LC2" class="blob-code blob-code-inner js-file-line"><span class="pl-k">from</span> django.http <span class="pl-k">import</span> HttpResponse</td>
+      </tr>
+      <tr>
+        <td id="file-mixins-py-L3" class="blob-num js-line-number" data-line-number="3"></td>
+        <td id="file-mixins-py-LC3" class="blob-code blob-code-inner js-file-line"><span class="pl-k">from</span> .render <span class="pl-k">import</span> Render</td>
+      </tr>
+      <tr>
+        <td id="file-mixins-py-L4" class="blob-num js-line-number" data-line-number="4"></td>
+        <td id="file-mixins-py-LC4" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-mixins-py-L5" class="blob-num js-line-number" data-line-number="5"></td>
+        <td id="file-mixins-py-LC5" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-mixins-py-L6" class="blob-num js-line-number" data-line-number="6"></td>
+        <td id="file-mixins-py-LC6" class="blob-code blob-code-inner js-file-line"><span class="pl-k">class</span> <span class="pl-en">RenderPDF</span>(<span class="pl-e">Render</span>):</td>
+      </tr>
+      <tr>
+        <td id="file-mixins-py-L7" class="blob-num js-line-number" data-line-number="7"></td>
+        <td id="file-mixins-py-LC7" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-mixins-py-L8" class="blob-num js-line-number" data-line-number="8"></td>
+        <td id="file-mixins-py-LC8" class="blob-code blob-code-inner js-file-line">    params: <span class="pl-c1">dict</span> <span class="pl-k">=</span> <span class="pl-c1">None</span></td>
+      </tr>
+      <tr>
+        <td id="file-mixins-py-L9" class="blob-num js-line-number" data-line-number="9"></td>
+        <td id="file-mixins-py-LC9" class="blob-code blob-code-inner js-file-line">    template: <span class="pl-c1">str</span> <span class="pl-k">=</span> <span class="pl-c1">None</span></td>
+      </tr>
+      <tr>
+        <td id="file-mixins-py-L10" class="blob-num js-line-number" data-line-number="10"></td>
+        <td id="file-mixins-py-LC10" class="blob-code blob-code-inner js-file-line">    email: <span class="pl-c1">bool</span> <span class="pl-k">=</span> <span class="pl-c1">False</span></td>
+      </tr>
+      <tr>
+        <td id="file-mixins-py-L11" class="blob-num js-line-number" data-line-number="11"></td>
+        <td id="file-mixins-py-LC11" class="blob-code blob-code-inner js-file-line">    to: <span class="pl-c1">str</span> <span class="pl-k">=</span> <span class="pl-c1">None</span></td>
+      </tr>
+      <tr>
+        <td id="file-mixins-py-L12" class="blob-num js-line-number" data-line-number="12"></td>
+        <td id="file-mixins-py-LC12" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-mixins-py-L13" class="blob-num js-line-number" data-line-number="13"></td>
+        <td id="file-mixins-py-LC13" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-mixins-py-L14" class="blob-num js-line-number" data-line-number="14"></td>
+        <td id="file-mixins-py-LC14" class="blob-code blob-code-inner js-file-line"><span class="pl-k">class</span> <span class="pl-en">RenderPDFMixin</span>(<span class="pl-e">RenderPDF</span>, <span class="pl-e">View</span>):</td>
+      </tr>
+      <tr>
+        <td id="file-mixins-py-L15" class="blob-num js-line-number" data-line-number="15"></td>
+        <td id="file-mixins-py-LC15" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-mixins-py-L16" class="blob-num js-line-number" data-line-number="16"></td>
+        <td id="file-mixins-py-LC16" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">def</span> <span class="pl-en">get</span>(<span class="pl-smi"><span class="pl-smi">self</span></span>, <span class="pl-smi">request</span>, <span class="pl-k">*</span><span class="pl-smi">args</span>, <span class="pl-k">**</span><span class="pl-smi">kwargs</span>):</td>
+      </tr>
+      <tr>
+        <td id="file-mixins-py-L17" class="blob-num js-line-number" data-line-number="17"></td>
+        <td id="file-mixins-py-LC17" class="blob-code blob-code-inner js-file-line">        <span class="pl-k">if</span> <span class="pl-c1">self</span>.email <span class="pl-k">is</span> <span class="pl-c1">False</span>:</td>
+      </tr>
+      <tr>
+        <td id="file-mixins-py-L18" class="blob-num js-line-number" data-line-number="18"></td>
+        <td id="file-mixins-py-LC18" class="blob-code blob-code-inner js-file-line">            <span class="pl-c"><span class="pl-c">#</span>## always add request object ###</span></td>
+      </tr>
+      <tr>
+        <td id="file-mixins-py-L19" class="blob-num js-line-number" data-line-number="19"></td>
+        <td id="file-mixins-py-LC19" class="blob-code blob-code-inner js-file-line">            <span class="pl-c1">self</span>.params[<span class="pl-s"><span class="pl-pds">'</span>request<span class="pl-pds">'</span></span>] <span class="pl-k">=</span> request</td>
+      </tr>
+      <tr>
+        <td id="file-mixins-py-L20" class="blob-num js-line-number" data-line-number="20"></td>
+        <td id="file-mixins-py-LC20" class="blob-code blob-code-inner js-file-line">            <span class="pl-k">return</span> Render.render(<span class="pl-c1">self</span>.template, <span class="pl-c1">self</span>.params)</td>
+      </tr>
+      <tr>
+        <td id="file-mixins-py-L21" class="blob-num js-line-number" data-line-number="21"></td>
+        <td id="file-mixins-py-LC21" class="blob-code blob-code-inner js-file-line">        <span class="pl-k">else</span>:</td>
+      </tr>
+      <tr>
+        <td id="file-mixins-py-L22" class="blob-num js-line-number" data-line-number="22"></td>
+        <td id="file-mixins-py-LC22" class="blob-code blob-code-inner js-file-line">            <span class="pl-c"><span class="pl-c">#</span>## process email ####</span></td>
+      </tr>
+      <tr>
+        <td id="file-mixins-py-L23" class="blob-num js-line-number" data-line-number="23"></td>
+        <td id="file-mixins-py-LC23" class="blob-code blob-code-inner js-file-line">            <span class="pl-k">return</span> HttpResponse(<span class="pl-s"><span class="pl-pds">"</span>Email<span class="pl-pds">"</span></span>)</td>
+      </tr>
+      <tr>
+        <td id="file-mixins-py-L24" class="blob-num js-line-number" data-line-number="24"></td>
+        <td id="file-mixins-py-LC24" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-mixins-py-L25" class="blob-num js-line-number" data-line-number="25"></td>
+        <td id="file-mixins-py-LC25" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-mixins-py-L26" class="blob-num js-line-number" data-line-number="26"></td>
+        <td id="file-mixins-py-LC26" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-mixins-py-L27" class="blob-num js-line-number" data-line-number="27"></td>
+        <td id="file-mixins-py-LC27" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+</tbody></table>
+
+
+  </div>
+
+  </div>
+</div>
+
+      </div>
+      <div class="gist-meta">
+        <a href="https://gist.github.com/bencleary/f6dba3d29db2bb10335b1bb6b680555a/raw/f6c9a90abb7ddd65382b3f1dcb198a59060e88cf/mixins.py" style="float:right">view raw</a>
+        <a href="https://gist.github.com/bencleary/f6dba3d29db2bb10335b1bb6b680555a#file-mixins-py">mixins.py</a>
+        hosted with ❤ by <a href="https://github.com/">GitHub</a>
+      </div>
+    </div>
+    <div class="gist-file">
+      <div class="gist-data">
+        <div class="js-gist-file-update-container js-task-list-container file-box">
+  <div id="file-views-py" class="file">
+    
+
+  <div itemprop="text" class="blob-wrapper data type-python ">
+      <table class="highlight tab-size js-file-line-container" data-tab-size="8">
+      <tbody><tr>
+        <td id="file-views-py-L1" class="blob-num js-line-number" data-line-number="1"></td>
+        <td id="file-views-py-LC1" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-views-py-L2" class="blob-num js-line-number" data-line-number="2"></td>
+        <td id="file-views-py-LC2" class="blob-code blob-code-inner js-file-line"><span class="pl-k">from</span> django.utils <span class="pl-k">import</span> timezone</td>
+      </tr>
+      <tr>
+        <td id="file-views-py-L3" class="blob-num js-line-number" data-line-number="3"></td>
+        <td id="file-views-py-LC3" class="blob-code blob-code-inner js-file-line"><span class="pl-k">from</span> .models <span class="pl-k">import</span> <span class="pl-k">*</span></td>
+      </tr>
+      <tr>
+        <td id="file-views-py-L4" class="blob-num js-line-number" data-line-number="4"></td>
+        <td id="file-views-py-LC4" class="blob-code blob-code-inner js-file-line"><span class="pl-k">from</span> .mixins <span class="pl-k">import</span> RenderPDFMixin</td>
+      </tr>
+      <tr>
+        <td id="file-views-py-L5" class="blob-num js-line-number" data-line-number="5"></td>
+        <td id="file-views-py-LC5" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-views-py-L6" class="blob-num js-line-number" data-line-number="6"></td>
+        <td id="file-views-py-LC6" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-views-py-L7" class="blob-num js-line-number" data-line-number="7"></td>
+        <td id="file-views-py-LC7" class="blob-code blob-code-inner js-file-line"><span class="pl-k">class</span> <span class="pl-en">Pdf</span>(<span class="pl-e">RenderPDFMixin</span>):</td>
+      </tr>
+      <tr>
+        <td id="file-views-py-L8" class="blob-num js-line-number" data-line-number="8"></td>
+        <td id="file-views-py-LC8" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-views-py-L9" class="blob-num js-line-number" data-line-number="9"></td>
+        <td id="file-views-py-LC9" class="blob-code blob-code-inner js-file-line">    template <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>pdf.html<span class="pl-pds">"</span></span></td>
+      </tr>
+      <tr>
+        <td id="file-views-py-L10" class="blob-num js-line-number" data-line-number="10"></td>
+        <td id="file-views-py-LC10" class="blob-code blob-code-inner js-file-line">    params <span class="pl-k">=</span> {</td>
+      </tr>
+      <tr>
+        <td id="file-views-py-L11" class="blob-num js-line-number" data-line-number="11"></td>
+        <td id="file-views-py-LC11" class="blob-code blob-code-inner js-file-line">        <span class="pl-s"><span class="pl-pds">'</span>today<span class="pl-pds">'</span></span>: timezone.now(),</td>
+      </tr>
+      <tr>
+        <td id="file-views-py-L12" class="blob-num js-line-number" data-line-number="12"></td>
+        <td id="file-views-py-LC12" class="blob-code blob-code-inner js-file-line">        <span class="pl-s"><span class="pl-pds">'</span>sales<span class="pl-pds">'</span></span>: Sales.objects.all(),</td>
+      </tr>
+      <tr>
+        <td id="file-views-py-L13" class="blob-num js-line-number" data-line-number="13"></td>
+        <td id="file-views-py-LC13" class="blob-code blob-code-inner js-file-line">    }</td>
+      </tr>
+</tbody></table>
+
+
+  </div>
+
+  </div>
+</div>
+
+      </div>
+      <div class="gist-meta">
+        <a href="https://gist.github.com/bencleary/f6dba3d29db2bb10335b1bb6b680555a/raw/f6c9a90abb7ddd65382b3f1dcb198a59060e88cf/views.py" style="float:right">view raw</a>
+        <a href="https://gist.github.com/bencleary/f6dba3d29db2bb10335b1bb6b680555a#file-views-py">views.py</a>
+        hosted with ❤ by <a href="https://github.com/">GitHub</a>
+      </div>
+    </div>
+</div>
+<script>var height = -1; var delayMs = 200;function notifyResize(height) {height = height ? height : document.documentElement.offsetHeight; var resized = false; if (window.donkey && donkey.resize) {donkey.resize(height); resized = true;}if (parent && parent._resizeIframe) {var obj = {iframe: window.frameElement, height: height}; parent._resizeIframe(obj); resized = true;}if (window.location && window.location.hash === "#amp=1" && window.parent && window.parent.postMessage) {window.parent.postMessage({sentinel: "amp", type: "embed-size", height: height}, "*");}if (window.webkit && window.webkit.messageHandlers && window.webkit.messageHandlers.resize) {window.webkit.messageHandlers.resize.postMessage(height); resized = true;}return resized;}function maybeResize() {if (document.documentElement.offsetHeight != height && notifyResize()) {height = document.documentElement.offsetHeight;}delayMs = Math.min(delayMs * 2, 1000000); setTimeout(maybeResize, delayMs);}maybeResize();</script></body></html>

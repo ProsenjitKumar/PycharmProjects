@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hospital</title>
+</head>
+<body>
+
+{% for i in hospital %}
+
+    <div>
+    <p>{{ i.point }}</p>
+    <p>{{ i.address }}</p>
+    <p>{{ i.hospital_n }}</p>
+    <p>{{ i.hospital_r }}</p>
+    </div>
+
+{% endfor %}
+
+</body>
+</html>

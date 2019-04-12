@@ -1,0 +1,18 @@
+language: python
+
+python:
+    - "2.7"
+
+env:
+   - TOX_ENV=django-1.8
+   - TOX_ENV=django-1.9
+   - TOX_ENV=django-1.10
+
+install: 
+    - pip install tox tox-travis
+
+script: 
+    - tox -e $TOX_ENV
+
+after_success:
+    - codecov --token=8e64a5ca-dfe6-4e86-be36-68088aae829f

@@ -1,0 +1,109 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>{% block title%}Django{% endblock %}</title>
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+		<link rel="stylesheet" type="text/css" href='{% static "css/base.css" %}'>
+	</head>
+	<body>
+
+		<div id="fb-root"></div>
+		<script>(function(d, s, id) {
+			 var js, fjs = d.getElementsByTagName(s)[0];
+			 if (d.getElementById(id)) return;
+			 js = d.createElement(s); js.id = id;
+			 js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
+			 fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
+
+		<ul class="sidebar-nav">
+		   {% if user.is_authenticated %}
+		     <li>User: {{ user.get_username }}</li>
+		     <li><a href="{% url 'logout'%}?next={{request.path}}">Logout</a></li>   
+		   {% else %}
+		     <li><a href="{% url 'login'%}?next={{request.path}}">Login</a></li>   
+		   {% endif %} 
+		</ul>
+
+		{% include "posts/includes/messages.html" %}
+		<div class="container">
+			<ol class="breadcrumb">
+				<li><a href="{% url 'post:list' %}">Home</a></li>
+				{% block post_detail_link %}
+				{% endblock %}
+				{% if not request.user.is_authenticated %}
+					<li class='pull-right'><a href="{% url 'register' %}">Register</a></li>
+					<li class='pull-right'><a href="{% url 'login' %}">Login</a></li>
+				{% else %}
+					<li class='pull-right'><a href="{% url 'logout' %}">Logout</a></li>
+				{% endif %}
+			</ol>
+			{% block content %}
+
+			{% endblock content %}
+		</div>
+
+		{% block media %}
+		{% endblock media %}
+
+		<script   src="https://code.jquery.com/jquery-3.2.1.min.js"   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="   crossorigin="anonymous"></script>
+
+	<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.3.6/marked.min.js"></script>
+
+		<script type="text/javascript">
+
+			$(document).ready(function(){
+				$(".markdown").each(function(){
+					var m=marked($(this).text());
+					$(this).html(m)
+				})
+				$(".post-detail-item img").each(function(){
+					$(this).addClass('img-responsive');
+				})
+
+				var titlecontent=$('#id_content');
+
+				function setContent(value){
+					var mark=marked(value);
+					$('#preview-content').html(mark);
+					$('#preview-content img').each(function(){
+						$(this).addClass("img-responsive");
+					})
+				}
+
+				setContent(titlecontent.val());
+
+				titlecontent.keyup(function(){
+					var newcontent = $(this).val()
+					setContent(newcontent)
+				})
+
+				var titleItem=$('#id_title');
+				
+				function settitle(value){
+					$('#preview-title').text(value);
+				}
+
+				settitle(titleItem.val());
+
+				titleItem.keyup(function(){
+					var newtitle = $(this).val()
+					settitle(newtitle)
+				})
+			})
+
+		</script>
+
+	</body>
+</html>

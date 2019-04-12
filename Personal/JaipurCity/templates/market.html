@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Market</title>
+</head>
+<body>
+
+{% for i in market %}
+
+    <div>
+    <p>{{ i.market_nam }}</p>
+    <p>{{ i.location }}</p>
+    <p>{{ i.point }}</p>
+    <p>{{ i.rating }}</p>
+    </div>
+
+{% endfor %}
+
+</body>
+</html>

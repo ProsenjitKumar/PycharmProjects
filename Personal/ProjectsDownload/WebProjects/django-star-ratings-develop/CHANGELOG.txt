@@ -1,0 +1,93 @@
+__next__
+------------------
+
+* Added support for python 3.7
+
+0.7.0 (2018-09-13)
+------------------
+
+* Added support for django 2.1
+* Changed sprite image in template tag to use static files wrapper
+  (this may cause issues if your STAR_RATINGS_STAR_SPRITE setting includes static root url)
+* Replaced links with forms so that requests are made correctly if there is no js (This may break other css/js)
+* Updated error message for missing requests context processor to work for new and old template settings
+
+0.6.1 (2018-02-08)
+------------------
+
+* Added js events for after a user rates an object
+* Added `user_rating_percentage` to rating template tag context.
+* Added `STAR_RATINGS_OBJECT_ID_PATTERN` for custom rating model handling in urls (thanks @RabidCicada)
+* Added documentation about initial migration when using custom ratings model (thanks @RabidCicada)
+
+
+0.6.0 (2017-12-11)
+------------------
+
+* Added support for django 2.0
+* Added swappable rating model
+
+
+0.5.6 (2017-07-12)
+------------------
+
+* Star sprite sheet can be specified in settings using `STAR_RATINGS_STAR_SPRITE`
+
+
+0.5.5 (2017-03-31)
+------------------
+
+* Support for Django 1.11
+* Added support for calculating aggregates on bulk create.
+* Fixed issue with hover state when widget is read only
+* Removed 'Login to rate' if user is logged in
+* Fixed issue with `icon_width` not resizing correctly
+
+
+0.5.4 (2017-01-26)
+------------------
+
+* Added docs.
+
+
+0.5.3 (2016-08-10)
+------------------
+
+* Added support for anonymous rating (thanks @urtzai)
+* Fixed issue with parsing floats (thanks @anex)
+* Added support for setting default star dimensions
+* Django 1.10 support
+
+
+0.5.2 (2016-04-12)
+------------------
+
+* Fixed issue where locales that use commas in floats would break the CSS width (thanks @spec45as and @JuanmaNatal)
+* Corrected docs (thanks @marcwebbie)
+
+
+0.5.0 (2015-12-11)
+-------------------
+
+* Django 1.9 support.
+
+
+0.3.0 (2015-09-24)
+-------------------
+
+* Moved templates from /templates/ratings/ to /templates/star_ratings/ to match the package name.
+  Backwards incompatible change. If you've customised your template please rename from /templates/ratings/ to /templates/star_ratings/
+* Added translation support and French translations. (Thanks @ollb).
+* Split widget into separate templates to make customisation easier. (Thanks @ollb).
+
+
+0.2.1 (2015-09-16)
+-------------------
+
+* Renamed Rating manager ratings_for_instance method to for_instance and added deprecation warning to old method calls.
+
+
+0.2.0 (2015-09-16)
+-------------------
+
+* Initial PyPI release.

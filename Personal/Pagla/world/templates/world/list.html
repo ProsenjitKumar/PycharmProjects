@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>List</title>
+</head>
+<body>
+
+<h1>List</h1>
+
+<a href="{% url 'home' %}">Home</a>
+
+{% load static %}
+
+
+
+    <br><br><br>
+
+
+          <!-- DataTables Example -->
+          <div style="margin:0 auto;width:85%;text-align:left" class="card mb-3">
+            <div class="card-body">
+
+
+
+
+                  {% for user in match %}
+
+                      {{ user.mpoly }}
+
+                    {% endfor %}
+
+
+
+            </div>
+          </div>
+
+
+
+
+
+
+</body>
+</html>

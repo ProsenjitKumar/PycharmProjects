@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html><head><title>views_updated_email_pdf.py – Medium</title><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="twitter:widgets:csp" content="on"><meta name="robots" content="noindex"><!-- base href="https://codeburst.io/media/7242af5aea2ce0ee74c622c2d9077f98?postId=41a2b9c41d16" --><style>body {text-rendering: optimizeLegibility; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-family: "ff-tisa-web-pro", Georgia, Cambria, "Times New Roman", Times, serif; font-weight: 400; color: #333332; font-size: 18px; line-height: 1.4; margin: 0; background-color: white; overflow: hidden;}iframe {max-width: 100%;}</style></head><body><style>.gist .gist-file { margin-bottom: 0 !important; }.gist { text-rendering: auto; }</style><script src="7242af5aea2ce0ee74c622c2d9077f98_data/3db3c8008e12cedc3bb43ba6112890c5.js" charset="utf-8"></script><link rel="stylesheet" href="cb0cab001e8bdaee469bdf2889d84322_data/gist-embed-1564cdcc2939872e81719982075d3d93.css"><div id="gist85378078" class="gist">
+    <div class="gist-file">
+      <div class="gist-data">
+        <div class="js-gist-file-update-container js-task-list-container file-box">
+  <div id="file-views_updated_email_pdf-py" class="file">
+    
+
+  <div itemprop="text" class="blob-wrapper data type-python ">
+      <table class="highlight tab-size js-file-line-container" data-tab-size="8">
+      <tbody><tr>
+        <td id="file-views_updated_email_pdf-py-L1" class="blob-num js-line-number" data-line-number="1"></td>
+        <td id="file-views_updated_email_pdf-py-LC1" class="blob-code blob-code-inner js-file-line"><span class="pl-k">from</span> django.views.generic <span class="pl-k">import</span> View</td>
+      </tr>
+      <tr>
+        <td id="file-views_updated_email_pdf-py-L2" class="blob-num js-line-number" data-line-number="2"></td>
+        <td id="file-views_updated_email_pdf-py-LC2" class="blob-code blob-code-inner js-file-line"><span class="pl-k">from</span> django.utils <span class="pl-k">import</span> timezone</td>
+      </tr>
+      <tr>
+        <td id="file-views_updated_email_pdf-py-L3" class="blob-num js-line-number" data-line-number="3"></td>
+        <td id="file-views_updated_email_pdf-py-LC3" class="blob-code blob-code-inner js-file-line"><span class="pl-k">from</span> .models <span class="pl-k">import</span> <span class="pl-k">*</span></td>
+      </tr>
+      <tr>
+        <td id="file-views_updated_email_pdf-py-L4" class="blob-num js-line-number" data-line-number="4"></td>
+        <td id="file-views_updated_email_pdf-py-LC4" class="blob-code blob-code-inner js-file-line"><span class="pl-k">from</span> .render <span class="pl-k">import</span> <span class="pl-k">*</span></td>
+      </tr>
+      <tr>
+        <td id="file-views_updated_email_pdf-py-L5" class="blob-num js-line-number" data-line-number="5"></td>
+        <td id="file-views_updated_email_pdf-py-LC5" class="blob-code blob-code-inner js-file-line"><span class="pl-k">import</span> requests</td>
+      </tr>
+      <tr>
+        <td id="file-views_updated_email_pdf-py-L6" class="blob-num js-line-number" data-line-number="6"></td>
+        <td id="file-views_updated_email_pdf-py-LC6" class="blob-code blob-code-inner js-file-line"><span class="pl-k">from</span> threading <span class="pl-k">import</span> Thread, activeCount</td>
+      </tr>
+      <tr>
+        <td id="file-views_updated_email_pdf-py-L7" class="blob-num js-line-number" data-line-number="7"></td>
+        <td id="file-views_updated_email_pdf-py-LC7" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-views_updated_email_pdf-py-L8" class="blob-num js-line-number" data-line-number="8"></td>
+        <td id="file-views_updated_email_pdf-py-LC8" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-views_updated_email_pdf-py-L9" class="blob-num js-line-number" data-line-number="9"></td>
+        <td id="file-views_updated_email_pdf-py-LC9" class="blob-code blob-code-inner js-file-line"><span class="pl-k">def</span> <span class="pl-en">send_email</span>(<span class="pl-smi">file</span>: <span class="pl-c1">list</span>):</td>
+      </tr>
+      <tr>
+        <td id="file-views_updated_email_pdf-py-L10" class="blob-num js-line-number" data-line-number="10"></td>
+        <td id="file-views_updated_email_pdf-py-LC10" class="blob-code blob-code-inner js-file-line">    r <span class="pl-k">=</span> requests.post(</td>
+      </tr>
+      <tr>
+        <td id="file-views_updated_email_pdf-py-L11" class="blob-num js-line-number" data-line-number="11"></td>
+        <td id="file-views_updated_email_pdf-py-LC11" class="blob-code blob-code-inner js-file-line">        <span class="pl-s"><span class="pl-pds">"</span>https://api.mailgun.net/v3/######/messages<span class="pl-pds">"</span></span>,</td>
+      </tr>
+      <tr>
+        <td id="file-views_updated_email_pdf-py-L12" class="blob-num js-line-number" data-line-number="12"></td>
+        <td id="file-views_updated_email_pdf-py-LC12" class="blob-code blob-code-inner js-file-line">        <span class="pl-v">auth</span><span class="pl-k">=</span>(<span class="pl-s"><span class="pl-pds">"</span>api<span class="pl-pds">"</span></span>, <span class="pl-s"><span class="pl-pds">"</span>key-########################################<span class="pl-pds">"</span></span>),</td>
+      </tr>
+      <tr>
+        <td id="file-views_updated_email_pdf-py-L13" class="blob-num js-line-number" data-line-number="13"></td>
+        <td id="file-views_updated_email_pdf-py-LC13" class="blob-code blob-code-inner js-file-line">        <span class="pl-v">files</span><span class="pl-k">=</span>[(<span class="pl-s"><span class="pl-pds">"</span>attachment<span class="pl-pds">"</span></span>, (<span class="pl-v">file</span>[<span class="pl-c1">0</span>], <span class="pl-c1">open</span>(<span class="pl-v">file</span>[<span class="pl-c1">1</span>], <span class="pl-s"><span class="pl-pds">"</span>rb<span class="pl-pds">"</span></span>).read()))],</td>
+      </tr>
+      <tr>
+        <td id="file-views_updated_email_pdf-py-L14" class="blob-num js-line-number" data-line-number="14"></td>
+        <td id="file-views_updated_email_pdf-py-LC14" class="blob-code blob-code-inner js-file-line">        <span class="pl-v">data</span><span class="pl-k">=</span>{<span class="pl-s"><span class="pl-pds">"</span>from<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>No Reply &lt;no-reply@##########&gt;<span class="pl-pds">"</span></span>,</td>
+      </tr>
+      <tr>
+        <td id="file-views_updated_email_pdf-py-L15" class="blob-num js-line-number" data-line-number="15"></td>
+        <td id="file-views_updated_email_pdf-py-LC15" class="blob-code blob-code-inner js-file-line">              <span class="pl-s"><span class="pl-pds">"</span>to<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>me@########<span class="pl-pds">"</span></span>,</td>
+      </tr>
+      <tr>
+        <td id="file-views_updated_email_pdf-py-L16" class="blob-num js-line-number" data-line-number="16"></td>
+        <td id="file-views_updated_email_pdf-py-LC16" class="blob-code blob-code-inner js-file-line">              <span class="pl-s"><span class="pl-pds">"</span>subject<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Sales Report<span class="pl-pds">"</span></span>,</td>
+      </tr>
+      <tr>
+        <td id="file-views_updated_email_pdf-py-L17" class="blob-num js-line-number" data-line-number="17"></td>
+        <td id="file-views_updated_email_pdf-py-LC17" class="blob-code blob-code-inner js-file-line">              <span class="pl-s"><span class="pl-pds">"</span>text<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Requested Sales Report<span class="pl-pds">"</span></span>,</td>
+      </tr>
+      <tr>
+        <td id="file-views_updated_email_pdf-py-L18" class="blob-num js-line-number" data-line-number="18"></td>
+        <td id="file-views_updated_email_pdf-py-LC18" class="blob-code blob-code-inner js-file-line">              <span class="pl-s"><span class="pl-pds">"</span>html<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>&lt;html&gt;Requested Sales Report&lt;/html&gt;<span class="pl-pds">"</span></span>})</td>
+      </tr>
+      <tr>
+        <td id="file-views_updated_email_pdf-py-L19" class="blob-num js-line-number" data-line-number="19"></td>
+        <td id="file-views_updated_email_pdf-py-LC19" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-views_updated_email_pdf-py-L20" class="blob-num js-line-number" data-line-number="20"></td>
+        <td id="file-views_updated_email_pdf-py-LC20" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-views_updated_email_pdf-py-L21" class="blob-num js-line-number" data-line-number="21"></td>
+        <td id="file-views_updated_email_pdf-py-LC21" class="blob-code blob-code-inner js-file-line"><span class="pl-k">class</span> <span class="pl-en">Pdf</span>(<span class="pl-e">View</span>):</td>
+      </tr>
+      <tr>
+        <td id="file-views_updated_email_pdf-py-L22" class="blob-num js-line-number" data-line-number="22"></td>
+        <td id="file-views_updated_email_pdf-py-LC22" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-views_updated_email_pdf-py-L23" class="blob-num js-line-number" data-line-number="23"></td>
+        <td id="file-views_updated_email_pdf-py-LC23" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">def</span> <span class="pl-en">get</span>(<span class="pl-smi"><span class="pl-smi">self</span></span>, <span class="pl-smi">request</span>):</td>
+      </tr>
+      <tr>
+        <td id="file-views_updated_email_pdf-py-L24" class="blob-num js-line-number" data-line-number="24"></td>
+        <td id="file-views_updated_email_pdf-py-LC24" class="blob-code blob-code-inner js-file-line">        sales <span class="pl-k">=</span> Sales.objects.all()</td>
+      </tr>
+      <tr>
+        <td id="file-views_updated_email_pdf-py-L25" class="blob-num js-line-number" data-line-number="25"></td>
+        <td id="file-views_updated_email_pdf-py-LC25" class="blob-code blob-code-inner js-file-line">        today <span class="pl-k">=</span> timezone.now()</td>
+      </tr>
+      <tr>
+        <td id="file-views_updated_email_pdf-py-L26" class="blob-num js-line-number" data-line-number="26"></td>
+        <td id="file-views_updated_email_pdf-py-LC26" class="blob-code blob-code-inner js-file-line">        params <span class="pl-k">=</span> {</td>
+      </tr>
+      <tr>
+        <td id="file-views_updated_email_pdf-py-L27" class="blob-num js-line-number" data-line-number="27"></td>
+        <td id="file-views_updated_email_pdf-py-LC27" class="blob-code blob-code-inner js-file-line">            <span class="pl-s"><span class="pl-pds">'</span>today<span class="pl-pds">'</span></span>: today,</td>
+      </tr>
+      <tr>
+        <td id="file-views_updated_email_pdf-py-L28" class="blob-num js-line-number" data-line-number="28"></td>
+        <td id="file-views_updated_email_pdf-py-LC28" class="blob-code blob-code-inner js-file-line">            <span class="pl-s"><span class="pl-pds">'</span>sales<span class="pl-pds">'</span></span>: sales,</td>
+      </tr>
+      <tr>
+        <td id="file-views_updated_email_pdf-py-L29" class="blob-num js-line-number" data-line-number="29"></td>
+        <td id="file-views_updated_email_pdf-py-LC29" class="blob-code blob-code-inner js-file-line">            <span class="pl-s"><span class="pl-pds">'</span>request<span class="pl-pds">'</span></span>: request</td>
+      </tr>
+      <tr>
+        <td id="file-views_updated_email_pdf-py-L30" class="blob-num js-line-number" data-line-number="30"></td>
+        <td id="file-views_updated_email_pdf-py-LC30" class="blob-code blob-code-inner js-file-line">        }</td>
+      </tr>
+      <tr>
+        <td id="file-views_updated_email_pdf-py-L31" class="blob-num js-line-number" data-line-number="31"></td>
+        <td id="file-views_updated_email_pdf-py-LC31" class="blob-code blob-code-inner js-file-line">        <span class="pl-v">file</span> <span class="pl-k">=</span> Render.render_to_file(<span class="pl-s"><span class="pl-pds">'</span>pdf.html<span class="pl-pds">'</span></span>, params)</td>
+      </tr>
+      <tr>
+        <td id="file-views_updated_email_pdf-py-L32" class="blob-num js-line-number" data-line-number="32"></td>
+        <td id="file-views_updated_email_pdf-py-LC32" class="blob-code blob-code-inner js-file-line">        thread <span class="pl-k">=</span> Thread(<span class="pl-v">target</span><span class="pl-k">=</span>send_email, <span class="pl-v">args</span><span class="pl-k">=</span>(<span class="pl-v">file</span>,))</td>
+      </tr>
+      <tr>
+        <td id="file-views_updated_email_pdf-py-L33" class="blob-num js-line-number" data-line-number="33"></td>
+        <td id="file-views_updated_email_pdf-py-LC33" class="blob-code blob-code-inner js-file-line">        thread.start()</td>
+      </tr>
+      <tr>
+        <td id="file-views_updated_email_pdf-py-L34" class="blob-num js-line-number" data-line-number="34"></td>
+        <td id="file-views_updated_email_pdf-py-LC34" class="blob-code blob-code-inner js-file-line">        <span class="pl-k">return</span> HttpResponse(<span class="pl-s"><span class="pl-pds">"</span>Processed<span class="pl-pds">"</span></span>)</td>
+      </tr>
+      <tr>
+        <td id="file-views_updated_email_pdf-py-L35" class="blob-num js-line-number" data-line-number="35"></td>
+        <td id="file-views_updated_email_pdf-py-LC35" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+</tbody></table>
+
+
+  </div>
+
+  </div>
+</div>
+
+      </div>
+      <div class="gist-meta">
+        <a href="https://gist.github.com/bencleary/3db3c8008e12cedc3bb43ba6112890c5/raw/f5351fe796f497fb8361bbcabdc256dabff9b317/views_updated_email_pdf.py" style="float:right">view raw</a>
+        <a href="https://gist.github.com/bencleary/3db3c8008e12cedc3bb43ba6112890c5#file-views_updated_email_pdf-py">views_updated_email_pdf.py</a>
+        hosted with ❤ by <a href="https://github.com/">GitHub</a>
+      </div>
+    </div>
+</div>
+<script>var height = -1; var delayMs = 200;function notifyResize(height) {height = height ? height : document.documentElement.offsetHeight; var resized = false; if (window.donkey && donkey.resize) {donkey.resize(height); resized = true;}if (parent && parent._resizeIframe) {var obj = {iframe: window.frameElement, height: height}; parent._resizeIframe(obj); resized = true;}if (window.location && window.location.hash === "#amp=1" && window.parent && window.parent.postMessage) {window.parent.postMessage({sentinel: "amp", type: "embed-size", height: height}, "*");}if (window.webkit && window.webkit.messageHandlers && window.webkit.messageHandlers.resize) {window.webkit.messageHandlers.resize.postMessage(height); resized = true;}return resized;}function maybeResize() {if (document.documentElement.offsetHeight != height && notifyResize()) {height = document.documentElement.offsetHeight;}delayMs = Math.min(delayMs * 2, 1000000); setTimeout(maybeResize, delayMs);}maybeResize();</script></body></html>

@@ -1,0 +1,109 @@
+﻿{% extends 'boighor/base.html' %}
+{% load static %}
+{% block title %}<title>{{ object.name_of_the_book }}</title>{% endblock %}
+{% block content %}
+
+	<!-- Main wrapper -->
+	<div class="wrapper" id="wrapper">
+        <!-- Start main Content -->
+        <div class="maincontent bg--white pt--80 pb--55">
+        	<div class="container">
+        		<div class="row">
+        			<div class="col-lg-9 col-12">
+        				<div class="wn__single__product">
+        					<div class="row">
+        						<div class="col-lg-6 col-12">
+        							<div class="wn__fotorama__wrapper">
+	        							<div class="fotorama wn__fotorama__action" data-nav="thumbs">
+		        							  <a href="#"><img src="{{ MEDIA_URL }}{{ object.image.url }}" alt=""></a>
+
+	        							</div>
+        							</div>
+        						</div>
+        						<div class="col-lg-6 col-12">
+        							<div class="product__info__main">
+        								<h1>{{ object.name_of_the_book }}</h1>
+
+        								<div class="price-box">
+        									<span>{% for author in object.author.all %} {{ author }}, <br> {% endfor %}</span>
+        								</div>
+                                        <div class="price-box">
+                                            <span>{{ object.publisher }}</span>
+                                        </div>
+                                        <div class="price-box">
+                                            <span>{% for translation in object.translator.all %} {{ translation }},<br> {% endfor %}</span>
+                                        </div>
+                                        <div class="price-box">
+        									<span>{% for editor in object.editor.all %} {{ editor }},<br> {% endfor %}</span>
+        								</div>
+        								<div class="box-tocart d-flex">
+        									<span>{{ object.edition }}</span><br>
+        								</div>
+										<div class="box-tocart d-flex">
+											<span>{{ object.price }} {{ object.currency }}</span>
+        								</div>
+										<div>
+											<span>{{ object.isbn }}</span>
+        								</div>
+										<div class="product_meta">
+											<span class="posted_in">Categories: 
+												<a href="#">{% for category in object.category.all %} {{ category }}, <br> {% endfor %}</a>,
+											</span>
+										</div>
+                                        <div>
+											<span>Language: {{ object.language }}</span>
+        								</div>
+                                        <div>
+											<span>Posted: {{ object.published }}</span>
+        								</div>
+                                         <div>
+											<span>Published: {{ object.month }}, {{ object.year }}</span>
+        								</div>
+                                        <div>
+											<span>Place: {{ object.place }}</span>
+        								</div>
+                                        <div>
+											<span>Page: {{ object.pages }}</span>
+        								</div>
+        							</div>
+        						</div>
+        					</div>
+        				</div>
+        				<div class="product__info__detailed">
+							<div class="pro_details_nav nav justify-content-start" role="tablist">
+	                            <a class="nav-item nav-link active" data-toggle="tab" href="#nav-details" role="tab">Summary</a>
+	                        </div>
+	                        <div class="tab__container">
+	                        	<!-- Start Single Tab Content -->
+	                        	<div class="pro__tab_label tab-pane fade show active" id="nav-details" role="tabpanel">
+									<div class="description__attribute">
+										<p>{{ object.summary }}</p>
+									</div>
+	                        	</div>
+	                        	<!-- End Single Tab Content -->
+	                        </div>
+        				</div>
+        			</div>
+
+        			<div class="col-lg-3 col-12 md-mt-40 sm-mt-40">
+        				<div class="shop__sidebar">
+        					<aside class="wedget__categories poroduct--cat">
+        						<h3 class="wedget__title">Book Categories</h3>
+
+        						<ul>
+                                    <li><a href="">Engineering<span>5</span></a></li>
+                                    <li><a href="">AI<span>50</span></a></li>
+                                    <li><a href="">Technology<span>45</span></a></li>
+        						</ul>
+
+        					</aside>
+        				</div>
+        			</div>
+        		</div>
+        	</div>
+        </div>
+        <!-- End main Content -->
+	</div>
+	<!-- //Main wrapper -->
+
+{% endblock %}

@@ -1,0 +1,36 @@
+<div class="media post">
+    <div class="d-flex flex-column counters">
+        <div class="vote">
+            <strong>{{ question.question_votes.count }}</strong> Votes
+        </div>
+        <div class="status {% if question.answer.count %}answered{% endif %}">
+            <strong>{{ question.answer.count }}</strong> Answers
+        </div>
+        <div class="view">
+            0 Views
+        </div>
+    </div>
+    <div class="media-body">
+        <div class="d-flex align-items-center">
+            <h3 class="mt-0">
+                <a href="{% url 'qa:questions-detail' question.slug %}">{{ question.title }}</a>
+            </h3>
+            <div class="ml-auto">
+                {% if request.user.is_authenticated and question.user.id == request.user.id %}
+                    <a href="{% url 'qa:questions-edit' question.slug %}" class="btn btn-sm btn-outline-info">Edit</a>
+                    <form class="form-delete" method="post" action="{% url 'qa:questions-delete' question.slug %}">
+                        {% csrf_token %}
+                        <button type="submit" class="btn btn-sm btn-outline-danger"
+                                onclick="return confirm('Are you sure?')">Delete
+                        </button>
+                    </form>
+                {% endif %}
+            </div>
+        </div>
+        <p class="lead">
+            Asked by {{ question.user.username }}
+            <a href=""></a>
+            <small class="text-muted"></small>
+        </p>
+    </div>
+</div>

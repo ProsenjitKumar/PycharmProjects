@@ -1,0 +1,49 @@
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>Home</title>
+    <style>
+       /* Set the size of the div element that contains the map */
+      #map {
+        height: 400px;  /* The height is 400 pixels */
+        width: 40%;  /* The width is the width of the web page */
+       }
+    </style>
+  </head>
+  <body>
+    <h3>My Google Maps Demo</h3>
+
+
+    <form method="post" action="list/">
+        {% csrf_token %}
+        <input type="text" name="search" placeholder="Search with name etc"/>
+        <input type="submit" value="Search"/>
+    </form>
+
+
+     <br>
+
+
+    <div id="map"></div>
+{% for restaurent in match1 %}
+    <script>
+function initMap() {
+  var uluru = {lat: {{ restaurent.latitude }}, lng: {{ restaurent.longitude }} };
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 16, center: uluru});
+  var marker = new google.maps.Marker({position: uluru, map: map, title: '{{ restaurent.restaurant }}'});
+}
+    </script>
+{% endfor %}
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBqEz7ozYxKa53JAeN4GFN2HfilyiFCbvw&callback=initMap">
+    </script>
+
+  <h1> <a href="{% url 'list' %}">List</a> </h1>
+    <h1> <a href="{% url 'list1' %}">List1</a> </h1>
+  <a href="{% url 'bd' %}">BD</a>
+
+  </body>
+</html>

@@ -1,0 +1,5 @@
+django
+django-user-media
+django-hvad
+Pillow
+django-libs

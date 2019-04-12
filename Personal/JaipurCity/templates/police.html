@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Police</title>
+    <style>
+       /* Set the size of the div element that contains the map */
+      #map {
+        height: 400px;  /* The height is 400 pixels */
+        width: 40%;  /* The width is the width of the web page */
+       }
+    </style>
+</head>
+<body>
+
+<div>
+    <div id="map"></div>
+{% for restaurent in police %}
+    <script>
+function initMap() {
+  var uluru = {lat: {{ restaurent.latitude }}, lng: {{ restaurent.longitude }} };
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 16, center: uluru});
+  var marker = new google.maps.Marker({position: uluru, map: map, title: '{{ restaurent.police_sta }}'});
+}
+    </script>
+{% endfor %}
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBqEz7ozYxKa53JAeN4GFN2HfilyiFCbvw&callback=initMap">
+    </script>
+</div>
+
+{% for i in police %}
+
+    <div>
+    <p>Police Station Name:--{{ i.police_sta }}</p>
+    <p>Rating:---------------{{ i.rating }}</p>
+    <p>Address:--------------{{ i.address }}</p>
+    <p>Contact Nimber:-------{{ i.contact_nu }}</p>
+    <p>Point:----------------{{ i.point }}</p>
+    </div><br>
+
+{% endfor %}
+
+
+
+</body>
+</html>

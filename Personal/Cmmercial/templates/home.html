@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
+<body>
+
+<h1>Home Page</h1>
+
+<div class="container">
+    {% for product in products %}
+        {{ product.name }}
+        <a href="{% url 'product-detail' product.id %}"> <img src="{{ MEDIA_URL }}{{ product.image.url }}"></a>
+    {% endfor %}
+</div>
+
+<a href="{% url 'index' %}">Index</a>
+
+</body>
+</html>

@@ -1,0 +1,11 @@
+*.egg-info/
+*.pyc
+*coverage/
+.tox/
+.coverage
+app_media/
+app_static/
+build/
+db.sqlite
+dist/
+docs/_build/

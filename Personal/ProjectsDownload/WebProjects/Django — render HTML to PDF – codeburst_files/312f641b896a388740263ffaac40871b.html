@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html><head><title>DB Seeder – Medium</title><meta name="description" content="DB Seeder"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="twitter:widgets:csp" content="on"><meta name="robots" content="noindex"><!-- base href="https://codeburst.io/media/312f641b896a388740263ffaac40871b?postId=41a2b9c41d16" --><style>body {text-rendering: optimizeLegibility; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-family: "ff-tisa-web-pro", Georgia, Cambria, "Times New Roman", Times, serif; font-weight: 400; color: #333332; font-size: 18px; line-height: 1.4; margin: 0; background-color: white; overflow: hidden;}iframe {max-width: 100%;}</style></head><body><style>.gist .gist-file { margin-bottom: 0 !important; }.gist { text-rendering: auto; }</style><script src="312f641b896a388740263ffaac40871b_data/5ec0efa1e3e28f422bbcc4c433cb8113.js" charset="utf-8"></script><link rel="stylesheet" href="cb0cab001e8bdaee469bdf2889d84322_data/gist-embed-1564cdcc2939872e81719982075d3d93.css"><div id="gist85373429" class="gist">
+    <div class="gist-file">
+      <div class="gist-data">
+        <div class="js-gist-file-update-container js-task-list-container file-box">
+  <div id="file-seeds-py" class="file">
+    
+
+  <div itemprop="text" class="blob-wrapper data type-python ">
+      <table class="highlight tab-size js-file-line-container" data-tab-size="8">
+      <tbody><tr>
+        <td id="file-seeds-py-L1" class="blob-num js-line-number" data-line-number="1"></td>
+        <td id="file-seeds-py-LC1" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-seeds-py-L2" class="blob-num js-line-number" data-line-number="2"></td>
+        <td id="file-seeds-py-LC2" class="blob-code blob-code-inner js-file-line"><span class="pl-k">from</span> .models <span class="pl-k">import</span> <span class="pl-k">*</span></td>
+      </tr>
+      <tr>
+        <td id="file-seeds-py-L3" class="blob-num js-line-number" data-line-number="3"></td>
+        <td id="file-seeds-py-LC3" class="blob-code blob-code-inner js-file-line"><span class="pl-k">from</span> random <span class="pl-k">import</span> <span class="pl-k">*</span></td>
+      </tr>
+      <tr>
+        <td id="file-seeds-py-L4" class="blob-num js-line-number" data-line-number="4"></td>
+        <td id="file-seeds-py-LC4" class="blob-code blob-code-inner js-file-line"><span class="pl-k">from</span> decimal <span class="pl-k">import</span> Decimal</td>
+      </tr>
+      <tr>
+        <td id="file-seeds-py-L5" class="blob-num js-line-number" data-line-number="5"></td>
+        <td id="file-seeds-py-LC5" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-seeds-py-L6" class="blob-num js-line-number" data-line-number="6"></td>
+        <td id="file-seeds-py-LC6" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-seeds-py-L7" class="blob-num js-line-number" data-line-number="7"></td>
+        <td id="file-seeds-py-LC7" class="blob-code blob-code-inner js-file-line"><span class="pl-k">class</span> <span class="pl-en">Seeder</span>:</td>
+      </tr>
+      <tr>
+        <td id="file-seeds-py-L8" class="blob-num js-line-number" data-line-number="8"></td>
+        <td id="file-seeds-py-LC8" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-seeds-py-L9" class="blob-num js-line-number" data-line-number="9"></td>
+        <td id="file-seeds-py-LC9" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">def</span> <span class="pl-c1">__init__</span>(<span class="pl-smi"><span class="pl-smi">self</span></span>):</td>
+      </tr>
+      <tr>
+        <td id="file-seeds-py-L10" class="blob-num js-line-number" data-line-number="10"></td>
+        <td id="file-seeds-py-LC10" class="blob-code blob-code-inner js-file-line">        <span class="pl-c1">self</span>.products <span class="pl-k">=</span> [<span class="pl-s"><span class="pl-pds">"</span>Orange Ball<span class="pl-pds">"</span></span>, <span class="pl-s"><span class="pl-pds">"</span>Chew Toy 1<span class="pl-pds">"</span></span>, <span class="pl-s"><span class="pl-pds">"</span>Cat Bowl<span class="pl-pds">"</span></span>, <span class="pl-s"><span class="pl-pds">"</span>Dog Bed<span class="pl-pds">"</span></span>, <span class="pl-s"><span class="pl-pds">"</span>Cat Food<span class="pl-pds">"</span></span>, <span class="pl-s"><span class="pl-pds">"</span>Dog Food<span class="pl-pds">"</span></span>]</td>
+      </tr>
+      <tr>
+        <td id="file-seeds-py-L11" class="blob-num js-line-number" data-line-number="11"></td>
+        <td id="file-seeds-py-LC11" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-seeds-py-L12" class="blob-num js-line-number" data-line-number="12"></td>
+        <td id="file-seeds-py-LC12" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">def</span> <span class="pl-en">seed</span>(<span class="pl-smi"><span class="pl-smi">self</span></span>):</td>
+      </tr>
+      <tr>
+        <td id="file-seeds-py-L13" class="blob-num js-line-number" data-line-number="13"></td>
+        <td id="file-seeds-py-LC13" class="blob-code blob-code-inner js-file-line">        <span class="pl-k">for</span> x <span class="pl-k">in</span> <span class="pl-c1">range</span>(<span class="pl-c1">20</span>):</td>
+      </tr>
+      <tr>
+        <td id="file-seeds-py-L14" class="blob-num js-line-number" data-line-number="14"></td>
+        <td id="file-seeds-py-LC14" class="blob-code blob-code-inner js-file-line">            title <span class="pl-k">=</span> choice(<span class="pl-c1">self</span>.products) <span class="pl-k">+</span> <span class="pl-s"><span class="pl-pds">"</span> <span class="pl-c1">{0}</span><span class="pl-pds">"</span></span>.format(randint(<span class="pl-c1">1</span>, <span class="pl-c1">10000</span>))</td>
+      </tr>
+      <tr>
+        <td id="file-seeds-py-L15" class="blob-num js-line-number" data-line-number="15"></td>
+        <td id="file-seeds-py-LC15" class="blob-code blob-code-inner js-file-line">            price <span class="pl-k">=</span> <span class="pl-c1">float</span>(<span class="pl-c1">format</span>(Decimal(<span class="pl-c1">str</span>(random())), <span class="pl-s"><span class="pl-pds">'</span>.2f<span class="pl-pds">'</span></span>))</td>
+      </tr>
+      <tr>
+        <td id="file-seeds-py-L16" class="blob-num js-line-number" data-line-number="16"></td>
+        <td id="file-seeds-py-LC16" class="blob-code blob-code-inner js-file-line">            quantity <span class="pl-k">=</span> randint(<span class="pl-c1">1</span>, <span class="pl-c1">100</span>)</td>
+      </tr>
+      <tr>
+        <td id="file-seeds-py-L17" class="blob-num js-line-number" data-line-number="17"></td>
+        <td id="file-seeds-py-LC17" class="blob-code blob-code-inner js-file-line">            customer <span class="pl-k">=</span> User.objects.get(<span class="pl-v">pk</span><span class="pl-k">=</span>randint(<span class="pl-c1">1</span>,<span class="pl-c1">3</span>))</td>
+      </tr>
+      <tr>
+        <td id="file-seeds-py-L18" class="blob-num js-line-number" data-line-number="18"></td>
+        <td id="file-seeds-py-LC18" class="blob-code blob-code-inner js-file-line">            product <span class="pl-k">=</span> Products(<span class="pl-v">title</span><span class="pl-k">=</span>title, <span class="pl-v">price</span><span class="pl-k">=</span>price)</td>
+      </tr>
+      <tr>
+        <td id="file-seeds-py-L19" class="blob-num js-line-number" data-line-number="19"></td>
+        <td id="file-seeds-py-LC19" class="blob-code blob-code-inner js-file-line">            product.save()</td>
+      </tr>
+      <tr>
+        <td id="file-seeds-py-L20" class="blob-num js-line-number" data-line-number="20"></td>
+        <td id="file-seeds-py-LC20" class="blob-code blob-code-inner js-file-line">            sale <span class="pl-k">=</span> Sales(<span class="pl-v">product</span><span class="pl-k">=</span>product, <span class="pl-v">quantity</span><span class="pl-k">=</span>quantity, <span class="pl-v">customer</span><span class="pl-k">=</span>customer)</td>
+      </tr>
+      <tr>
+        <td id="file-seeds-py-L21" class="blob-num js-line-number" data-line-number="21"></td>
+        <td id="file-seeds-py-LC21" class="blob-code blob-code-inner js-file-line">            sale.save()</td>
+      </tr>
+      <tr>
+        <td id="file-seeds-py-L22" class="blob-num js-line-number" data-line-number="22"></td>
+        <td id="file-seeds-py-LC22" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-seeds-py-L23" class="blob-num js-line-number" data-line-number="23"></td>
+        <td id="file-seeds-py-LC23" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+</tbody></table>
+
+
+  </div>
+
+  </div>
+</div>
+
+      </div>
+      <div class="gist-meta">
+        <a href="https://gist.github.com/bencleary/5ec0efa1e3e28f422bbcc4c433cb8113/raw/f4208132fddd4ff8d7d3f39a32448fdd5c71e14f/seeds.py" style="float:right">view raw</a>
+        <a href="https://gist.github.com/bencleary/5ec0efa1e3e28f422bbcc4c433cb8113#file-seeds-py">seeds.py</a>
+        hosted with ❤ by <a href="https://github.com/">GitHub</a>
+      </div>
+    </div>
+</div>
+<script>var height = -1; var delayMs = 200;function notifyResize(height) {height = height ? height : document.documentElement.offsetHeight; var resized = false; if (window.donkey && donkey.resize) {donkey.resize(height); resized = true;}if (parent && parent._resizeIframe) {var obj = {iframe: window.frameElement, height: height}; parent._resizeIframe(obj); resized = true;}if (window.location && window.location.hash === "#amp=1" && window.parent && window.parent.postMessage) {window.parent.postMessage({sentinel: "amp", type: "embed-size", height: height}, "*");}if (window.webkit && window.webkit.messageHandlers && window.webkit.messageHandlers.resize) {window.webkit.messageHandlers.resize.postMessage(height); resized = true;}return resized;}function maybeResize() {if (document.documentElement.offsetHeight != height && notifyResize()) {height = document.documentElement.offsetHeight;}delayMs = Math.min(delayMs * 2, 1000000); setTimeout(maybeResize, delayMs);}maybeResize();</script></body></html>

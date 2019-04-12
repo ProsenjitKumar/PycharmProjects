@@ -1,0 +1,4 @@
+django==1.8
+django-model-utils
+django-braces
+django-star-ratings

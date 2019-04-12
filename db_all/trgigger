@@ -1,0 +1,102 @@
+﻿/*
+select * from employeer;
+
+create table history(
+	id integer,
+	id_name character varying,
+	old_log_date date,
+	old_log_time time,
+	new_log_date date,
+	new_log_time time
+);
+
+select * from history; 
+
+
+create or replace function log_change()
+returns trigger as
+$BODY$
+begin
+if new.log_time<>old.log_time and new.log_date<>old.log_date then
+insert into history values(old.id, old.name, old.log_date, old.log_time, new.log_date, new.log_time);
+end if;
+return new;
+end;
+$BODY$
+language plpgsql; 
+
+
+create trigger loc_changer
+before update
+on employeer
+for each row
+execute procedure log_change()
+
+
+select * from history;
+select * from employeer;
+update employeer set (log_date, log_time) = ('2017-05-22','06:26:16') where id=2
+
+
+create table history2(
+	id integer,
+	old_log_time time,
+	new_log_time time
+);
+
+
+create or replace function emp_change()
+returns trigger as 
+$BODY$
+begin
+if new.log_time<>old.log_time then
+insert into history2 values (old.id, old.log_time, new.log_time);
+end if;
+return new;
+end;
+$BODY$
+language plpgsql;
+
+
+create trigger emp_changer
+before update
+on employeer
+for each row
+execute procedure emp_change()
+
+
+
+select * from history;
+select * from history2;
+select new_log_time as right_new_time from history2;
+select * from employeer;
+update employeer set log_time='06:53:56' where id=1
+*/
+
+select * from employeer;
+select count(*) from history;
+select count(*) from history2;
+
+select max(id) from employeer;
+select min(id) from employeer;
+select sum(log_time) from employeer;
+select avg(log_time) from employeer;
+select current_timestamp;
+alter table employeer add salary real;
+--insert into employeer in salary values(26000) where id = 1
+alter table employeer drop column salary;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

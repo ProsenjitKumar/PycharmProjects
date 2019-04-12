@@ -1,0 +1,70 @@
+{% extends "posts/base.html" %}
+{% load urlify %}
+{% load crispy_forms_tags %}
+
+{% block title%}
+{{ obj.title }} | {{ block.super }}
+{% endblock %}
+
+{% block post_detail_link %}
+<li><a href="{{ obj.get_absolute_url }}">{{ obj.title }}</a></li>
+{% endblock %}
+
+{% block content %}
+
+	<div class='col-sm-6 col-sm-offset-3'>
+		{% if obj.image %}
+			<img src="{{ obj.image.url }}" class="img-responsive">
+		{% endif %}
+		<h1>{{ title }} <small>{% if obj.draft %}<span style="color:red;">Draft </span>{% endif %}{{ obj.publish }}<br/></small></h1>
+		<p>Read Time: {{ obj.read_time|time:'i' }} minutes</p>
+		{% if obj.user.get_full_name %}
+			<p> Auther: {{ obj.user.get_full_name }}</p>
+		{% else %}
+			<p> Auther: {{ obj.user }}</p>
+		{% endif %}
+
+		<p>
+			<div class="fb-like" data-href="{{ request.build_absolute_uri }}" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+		</p>
+
+		<p>
+			<a href="https://www.facebook.com/sharer/sharer.php?u={{ request.build_absolute_uri }}">Facebook</a>
+
+			<a href="https://twitter.com/home?status={{ obj.content|urlify }}%20{{ request.build_absolute_uri }}">Twitter</a>
+
+			<a href='https://plus.google.com/share?url={{ request.build_absolute_uri }}'>GooglePlus</a>
+
+			<a href="https://www.linkedin.com/shareArticle?mini=true&url={{ request.build_absolute_uri }}&title={{ obj.content|urlify }}&source={{ request.build_absolute_uri }}">Linkedin</a>
+
+			<a href="http://www.reddit.com/submit?url={{ request.build_absolute_uri }}&title={{ obj.content|urlify }}">Reddit</a>
+		</p>
+		<hr/>
+
+		<div class='col-sm-12'>
+
+		<div class="post-detail-item">
+			{{ obj.get_mark }}
+		</div>
+		<hr/>
+		<br>
+		<div>
+			<p class="lead">Comments</p>
+			<hr/>
+			<form method="post" action="">{% csrf_token %}
+				{{ comment_form|crispy }}
+				<button class="btn btn-default" type="submit">Comment</button>
+			</form>
+			<hr/>
+			{% for comment in comments %}
+				<blockquote>
+					<p>{{ comment.content }}</p>
+					<footer>via {{ comment.user }} | {{ comment.timestamp|timesince }} ago</footer>
+					<hr/>
+				</blockquote>
+			{% endfor %}
+		</div>
+	</div>
+	</div>
+
+{% endblock %}

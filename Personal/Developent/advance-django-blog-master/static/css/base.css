@@ -1,0 +1,24 @@
+.home_image{
+    color: white;
+    height : 500px;
+    width : 100%;
+    background-image: url("https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")
+}
+
+#home_brand{
+    padding-top: 16%;
+    font-size: 90px;
+}
+
+.feature_image_container{
+    height: 300px:
+}
+
+.top-margin{
+    margin-top: 100px;
+}
+
+.sidebar{
+	height: 3000px;
+	background-color: lightgreen;
+}

@@ -1,0 +1,517 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"re",
+				"request"
+			],
+			[
+				"wor",
+				"word_ckheck"
+			],
+			[
+				"wo",
+				"word"
+			],
+			[
+				"fo",
+				"font-size\tproperty"
+			],
+			[
+				"pad",
+				"padding-right\tproperty"
+			],
+			[
+				"co",
+				"color\tproperty"
+			],
+			[
+				"bl",
+				"blog"
+			],
+			[
+				"c",
+				"com"
+			],
+			[
+				"on",
+				"on_delete"
+			],
+			[
+				"to",
+				"to_email"
+			],
+			[
+				"fr",
+				"from_email"
+			],
+			[
+				"nu",
+				"num"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/root/PycharmProjects/HerokuApp--prosenjit-das--My-Blog/templates/blog/base/base_blog.html",
+			"settings":
+			{
+				"buffer_size": 9479,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/root/PycharmProjects/HerokuApp--prosenjit-das--My-Blog/search/views.py",
+			"settings":
+			{
+				"buffer_size": 462,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/root/PycharmProjects/HerokuApp--prosenjit-das--My-Blog/templates/portfolio/index.html",
+			"settings":
+			{
+				"buffer_size": 11479,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/root/PycharmProjects/DjangoSearchDefaultBultin/searching_app/views.py",
+			"settings":
+			{
+				"buffer_size": 713,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/root/PycharmProjects/BlogPost/blog_post/models.py",
+			"settings":
+			{
+				"buffer_size": 512,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/root/PycharmProjects/Fromcommunity_MyPortfolio/PythonPro/spell_check.py",
+			"settings":
+			{
+				"buffer_size": 319,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/root/PycharmProjects",
+		"/root/PycharmProjects/DjangoSearchDefaultBultin",
+		"/root/PycharmProjects/DjangoSearchDefaultBultin/searching_app",
+		"/root/PycharmProjects/DjangoSearchDefaultBultin/templates",
+		"/root/PycharmProjects/DjangoSearchDefaultBultin/templates/actors",
+		"/root/PycharmProjects/HerokuApp--prosenjit-das--My-Blog",
+		"/root/PycharmProjects/HerokuApp--prosenjit-das--My-Blog/ProsenjitKumar",
+		"/root/PycharmProjects/HerokuApp--prosenjit-das--My-Blog/templates",
+		"/root/PycharmProjects/HerokuApp--prosenjit-das--My-Blog/templates/portfolio",
+		"/root/PycharmProjects/Map-Recommend-Location",
+		"/root/PycharmProjects/Map-Recommend-Location/JaipurSmartCity",
+		"/root/PycharmProjects/NewsLetter",
+		"/root/PycharmProjects/NewsLetter/NewsLetter",
+		"/root/PycharmProjects/NewsLetter/newsltters",
+		"/root/PycharmProjects/NewsLetter/templates"
+	],
+	"file_history":
+	[
+		"/root/PycharmProjects/HerokuApp--prosenjit-das--My-Blog/templates/blog/single-post-1.html",
+		"/root/PycharmProjects/Developent/advance-django-blog-master/venv/lib/python3.7/site-packages/PIL/PngImagePlugin.py",
+		"/root/PycharmProjects/HerokuApp--prosenjit-das--My-Blog/templates/subscription_join/contact/contact.html",
+		"/root/PycharmProjects/HerokuApp--prosenjit-das--My-Blog/ProsenjitKumar/settings.py",
+		"/root/PycharmProjects/HerokuApp--prosenjit-das--My-Blog/templates/portfolio/index.html",
+		"/root/PycharmProjects/HerokuApp--prosenjit-das--My-Blog/templates/subscription_join/contact/success.html",
+		"/root/PycharmProjects/HerokuApp--prosenjit-das--My-Blog/templates/blog/base/base_blog.html",
+		"/root/PycharmProjects/Developent/advance_blog-master/blog/settings.py",
+		"/root/Downloads/google2483b5e318b98dcc.html",
+		"/root/PycharmProjects/Developent/Blog-Application-master/blog/models.py",
+		"/root/PycharmProjects/Developent/Blog-Application-master/blog/templatetags/blog_tags.py",
+		"/root/PycharmProjects/HerokuApp--prosenjit-das--My-Blog/subscription_join/views.py",
+		"/root/PycharmProjects/Developent/Blog-Application-master/mysite/settings.py",
+		"/root/PycharmProjects/Developent/AjaxWithDjango/src/AjaxDjango/settings.py",
+		"/root/PycharmProjects/Developent/AjaxWithDjango/src/subscription_join/forms.py",
+		"/root/Downloads/templatemo_455_visual_admin/maps.html",
+		"/root/PycharmProjects/Developent/AjaxWithDjango/src/subscription_join/views.py",
+		"/root/PycharmProjects/HerokuApp--prosenjit-das--My-Blog/templates/blog/index.html",
+		"/prosenjit/Git Repository/Python/HerokuApp--prosenjit-das--My-Blog/templates/portfolio/index.html",
+		"/prosenjit/Templates/Portfolio_unzip/venue-master/index.html",
+		"/prosenjit/Templates/SelectedTemplates/blog_with_portfolio/index.html",
+		"/root/PycharmProjects/prosenjit-das/templates/portfolio/index.html",
+		"/root/PycharmProjects/Accounts/Accounts/settings.py",
+		"/root/PycharmProjects/prosenjit-das/templates/blog/index.html",
+		"/prosenjit/Templates/blog_unzip/bona-colorlib/bona/single-post-1.html",
+		"/prosenjit/Templates/blog_unzip/bona-colorlib/bona/index.html",
+		"/root/PycharmProjects/Developent/DjangoCms/prosenjit/prosenjit/templates/base.html",
+		"/root/PycharmProjects/HerokuApp/prosenjitkumar/templates/base.html",
+		"/root/PycharmProjects/Stripe_4-master/templates/home.html",
+		"/root/PycharmProjects/Developent/cfehome/src/cfehome/settings/__init__.py",
+		"/root/PycharmProjects/Developent/cfehome/src/cfehome/settings/base.py",
+		"/root/PycharmProjects/Accounts/templates/base.html",
+		"/root/PycharmProjects/Blog/blog/models.py",
+		"/root/PycharmProjects/Developent/cfehome/src/cfehome/settings/production.py",
+		"/root/PycharmProjects/Developent/cfehome/src/cfehome/settings/local.py",
+		"/root/PycharmProjects/HumanityWatch/templates/available_donor.html",
+		"/root/PycharmProjects/JaipurSmartCity/templates/listing/restaurant.html",
+		"/prosenjit/Templates/SelectedTemplates/searching/listing/listing.html",
+		"/root/PycharmProjects/Jaypur3/app/templates/app/google map.html",
+		"/root/PycharmProjects/JaipurCity/templates/police.html",
+		"/root/PycharmProjects/valentine-finder-with-api/src/static/js/app.js",
+		"/prosenjit/Templates/searching/listing/detail.html",
+		"/prosenjit/Templates/searching/listing/index.html",
+		"/root/Downloads/django-review-master (1)/django-review-master/review/models.py",
+		"/root/PycharmProjects/djangoforbeginners/ch15-comments/templates/base.html",
+		"/root/Downloads/carinary/index.html",
+		"/root/Downloads/django-newsletter-subscription-master/setup.py",
+		"/root/Downloads/Registration_App-master/Arif1/log/views.py",
+		"/root/Downloads/Registration_App-master/Arif1/Arif/settings.py",
+		"/root/PycharmProjects/Fromcommunity_MyPortfolio/FunnyMath.py",
+		"/root/Documents/hgjhgj",
+		"/prosenjit/Templates/aStar/index.html",
+		"/root/PycharmProjects/Dreamway_1/templates/accounts_2/dashboard_charts.html",
+		"/root/PycharmProjects/Dreamway_1/templates/accounts_2/info.html",
+		"/root/PycharmProjects/Dreamway_1/templates/register.html",
+		"/root/PycharmProjects/Dreamway_1/templates/register_success.html",
+		"/root/PycharmProjects/Dreamway_1/templates/login.html",
+		"/root/PycharmProjects/Dreamway_1/templates/pass_admin_approval_wrong.html",
+		"/prosenjit/Templates/admin-on-rest-demo-master/public/index.html",
+		"/prosenjit/WebProjects/blooddonation-master/appdata/models.py"
+	],
+	"find":
+	{
+		"height": 0.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 3,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/root/PycharmProjects/HerokuApp--prosenjit-das--My-Blog/templates/blog/base/base_blog.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 9479,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 1537.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/root/PycharmProjects/HerokuApp--prosenjit-das--My-Blog/search/views.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 462,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/root/PycharmProjects/HerokuApp--prosenjit-das--My-Blog/templates/portfolio/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 11479,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								8766,
+								8766
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 306.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/root/PycharmProjects/DjangoSearchDefaultBultin/searching_app/views.py",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 713,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								585,
+								585
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/root/PycharmProjects/BlogPost/blog_post/models.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 512,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								143,
+								143
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/root/PycharmProjects/Fromcommunity_MyPortfolio/PythonPro/spell_check.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 319,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								319,
+								319
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 39.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "cfehome.sublime-project",
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 284.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

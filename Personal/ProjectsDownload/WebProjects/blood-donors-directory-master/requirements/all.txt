@@ -1,0 +1,4 @@
+-r install.txt
+-r dev.txt
+-r tests.txt
+-r docs.txt
