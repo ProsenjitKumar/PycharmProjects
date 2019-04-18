@@ -1,0 +1,198 @@
+* {
+	margin:0;
+	padding:0;
+}
+body  {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	background:#FFFFFF;
+	color:#535353;
+}
+h3 {
+	color:#535353;
+	font-size:14px;
+	font-weight:bold;
+	padding:0 0 30px 0;
+	font-family:tahoma, arial;
+}
+h2 {
+	color:#535353;
+	font-size:24px;
+	font-weight:bold;
+	font-family:tahoma, arial;
+}
+h1 {
+	color:#535353;
+	font-size:24px;
+	font-weight:bold;
+	font-family:tahoma, arial;
+	padding:0 0 20px 0;
+}
+img {
+	border:0;
+}
+a {
+	color:#3588c8;
+	font-size:12px;
+	text-decoration:underline;
+}
+a:hover {
+	color:#3588c8;
+	font-size:12px;
+	text-decoration:none;
+}
+.info {
+	min-height:190px;
+}
+.infoLinks{
+	float:left;
+	padding:20px 30px 0 0;
+}
+.infoLinks img {
+	float:left;
+	padding:0 10px 0 0;
+}
+.infoLinks .text {
+	padding:0px 0 0 10px;
+}
+.imageLeft {
+	float:left;
+	padding:0 20px 10px 0;
+}
+#container { 
+	width: 980px;  
+	margin: 0 auto;
+} 
+#header {
+	padding:10px 0 30px 0;
+}
+.logoContainer {
+	float:left;
+}
+.iconsMenu {
+	float:right;
+}
+.iconsMenu li {
+	display:inline;
+	list-style:none;
+}
+.logo {
+	font-size:48px;
+	font-style:italic;
+}
+.logo span {
+	color:#3588c8;
+}
+.slogan {
+	font-size:24px;
+	color:#8ac806;
+	font-style:italic;
+}
+#navcontainer {
+	padding:2px 0 1px 0;
+}
+#navcontainer ul {
+	padding-left: 0;
+	margin-left: 0;
+	background:url(images/menuBackground.jpg) repeat-x left top;
+	color: White;
+	float: left;
+	width: 100%;
+}
+#navcontainer ul li { 
+	display: inline; 
+}
+#navcontainer ul li a {
+	padding:10px 32px;
+	color: White;
+	text-decoration: none;
+	float: left;
+	border-right:1px solid #75aeda;
+}
+#navcontainer ul li a:hover {
+	background:url(images/menuActiveBackground.jpg) repeat-x left top;
+	color: #fff;
+}
+
+#navcontainer ul #active a {
+	background:url(images/menuActiveBackground.jpg) repeat-x left top;
+	color: #fff;
+}
+.picHeader {
+	background:url(images/picHeader.jpg) no-repeat left top;
+	height:339px;
+	width:980px;
+} 
+.picHeaderBody {
+	padding:290px 20px 0 20px;
+	font-size:18px;
+	font-weight:bold;
+	color:#000000;
+}
+.headerBodyLine1 {
+	float:left;
+	padding:0 20px 0 0;
+}
+.headerBodyLine2 {
+	padding:10px 100px 0 260px;
+	float:left;
+}
+#sidebar1 {
+	float: left;
+	width: 320px;
+}
+.bookBox {
+	border-bottom:1px solid #b0b1b3;
+	padding:20px 0;
+	margin:0 40px 0 0;
+}
+.bookBox span {
+	font-size:14px;
+	color:#ff0000;
+	padding-left:20px;
+}
+#mainContent { 
+	margin: 0 0 0 320px; 
+}
+.boxBook {
+	float:left;
+}
+.smallButton {
+	background:url(images/buttonSmallBackground.jpg) repeat-x left top;
+	color:#ffffff;
+	border:0;
+	cursor:pointer;
+	margin:10px 0 0 0;
+	padding:1px;
+	font-size:11px;
+}
+.bigButton {
+	background:url(images/buttonBackground.jpg) repeat-x left top;
+	color:#ffffff;
+	border:0;
+	cursor:pointer;
+	min-width:100px;
+	font-size:30px;
+} 
+#footer {
+	background:#121210;
+	color:#717171;
+	padding:30px 0; 
+}
+#footer p {
+	text-align:center;
+} 
+#footer a {
+	color:#bababa;
+	text-decoration:underline;
+}
+#footer a:hover {
+	color:#bababa;
+	text-decoration:none;
+}
+.clearfloat { /* this class should be placed on a div or break element and should be the final element before the close of a container that should fully contain a float */
+	clear:both;
+    height:0;
+    font-size: 1px;
+    line-height: 0px;
+}
