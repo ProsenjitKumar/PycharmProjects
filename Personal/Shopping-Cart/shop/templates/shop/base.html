@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="{% static 'css/styles.css' %}">
 </head>
 <body>
-{% include 'shop/navbar.html' %}
+
 
 <div class="container">
     <div class="row" style="margin-top: 6%">
@@ -16,7 +16,7 @@
             {% with totail_items=cart|length %}
                 {% if cart|length > 0 %}
                     My Shopping Order:
-                    <a href="{% url "cart:cart_detail" %}" style="color: #ffffff">
+                    <a href="{% url "cart:cart_detail" %}" style="color: #0e831e">
                         {{ totail_items }} item {{ totail_items|pluralize }}, Taka. {{ cart.get_total_price }}
                     </a>
                     {% else %}
@@ -26,6 +26,7 @@
          </button>
     </div>
 </div>
+
 {% block content %}
 
 

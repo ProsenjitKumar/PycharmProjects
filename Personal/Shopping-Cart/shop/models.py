@@ -2,6 +2,9 @@ from django.db import models
 from django.urls import reverse
 
 
+from company.models import ClientCompany
+
+
 class Category(models.Model):
     name = models.CharField(max_length=150, db_index=True)
     slug = models.SlugField(max_length=150, unique=True ,db_index=True)
@@ -21,16 +24,18 @@ class Category(models.Model):
 
 
 class Product(models.Model):
-    category = models.ForeignKey(Category, related_name='products', on_delete=models.CASCADE)
     name = models.CharField(max_length=100, db_index=True)
-    slug = models.SlugField(max_length=100, db_index=True)
-    description = models.TextField(blank=True)
+    category = models.ForeignKey(Category, related_name='products', on_delete=models.CASCADE)
+    company_name = models.ForeignKey(ClientCompany, on_delete=models.CASCADE)
     price = models.DecimalField(max_digits=10, decimal_places=2)
-    available = models.BooleanField(default=True)
+    size = models.PositiveSmallIntegerField(blank=True, null=True)
     stock = models.PositiveIntegerField()
+    description = models.TextField(blank=True)
+    available = models.BooleanField(default=True)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
     image = models.ImageField(upload_to='products/%Y/%m/%d', blank=True)
+    slug = models.SlugField(max_length=100, db_index=True)
 
     class Meta:
         ordering = ('name', )
@@ -41,3 +46,4 @@ class Product(models.Model):
 
     def get_absolute_url(self):
         return reverse('shop:product_detail', args=[self.id, self.slug])
+

@@ -12,8 +12,8 @@
             <span class="badge pull-right">
                 {% with totail_items=cart|length %}
                     {% if cart|length > 0 %}
-                        My Shopping Order:
-                        <a href="{% url "cart:cart_detail" %}" style="color: #ffffff">
+{#                        My Shopping Order:#}
+                        <a href="{% url "cart:cart_detail" %}" style="color: #0e831e">
                             {{ totail_items }} item {{ totail_items|pluralize }},  {{ cart.get_total_price }} Taka.
                         </a>
                         {% else %}
@@ -23,7 +23,7 @@
             </span>
         </h2>
             <table class="table table-striped table-hover">
-                <thead style="background-color: #5AC8FA">
+                <thead style="background-color: #fa64cc">
                     <tr>
                         <th>Image</th>
                         <th>Product</th>
@@ -42,7 +42,7 @@
                                     <img src="{% if product.image %} {{ product.image.url }} {% else %} {% static 'img/default.jpg' %} {% endif %}" alt="..." style="height: 130px; width: auto">
                                 </a>
                             </td>
-                            <td>{{ product.name }}</td>
+                            <td style="color: #c404ea">{{ product.name }}</td>
                             <td>
                                 <form action="{% url "cart:cart_add" product.id %}" method="post">
                                     {% csrf_token %}
@@ -59,7 +59,7 @@
                         </tr>
                     {% endwith %}
                 {% endfor %}
-                <tr style="background-color: #5AC8FA">
+                <tr style="background-color: #faa0cd">
                     <td><b>Total</b></td>
                     <td colspan="4"></td>
                     <td colspan="num"><b>Taka. {{ cart.get_total_price }}</b></td>

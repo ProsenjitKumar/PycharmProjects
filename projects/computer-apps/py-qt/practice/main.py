@@ -7,7 +7,7 @@ class Window(QWidget):
     def __init__(self):
         super().__init__()
 
-        self.title = "PyQt5 Plain TextEdit"
+        self.title = "PyQt5 Demo"
         self.top = 200
         self.left = 500
         self.width = 400

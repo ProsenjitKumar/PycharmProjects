@@ -1,0 +1,37 @@
+{% load static %}
+<title>Home</title>
+
+
+    {% for object in object_list %}
+
+        <h4 class="title"><a href="#"><b>{{ object.name }}</b></a></h4>
+        <a href="{% url 'product_details' id=object.id slug=object.slug %}"><img src="{{ MEDIA_URL }}{{ object.image.url }}" style="width: 150px;height: 200px"></a>
+
+        <h4 class="title"><a href="#"><b>{{ object.price }}</b></a></h4>
+
+
+
+    {% endfor %}
+
+
+
+
+        <!-- 9. EXTRA SMALL BLOG -->
+
+            <div class="pagination">
+                <span class="step-links">
+                    {% if page_obj.has_previous %}
+                        <a href="?page={{ page_obj.previous_page_number }}" style="color: #13b521">Previous</a>
+                    {% endif %}
+
+                    <span class="current">
+                        Page {{ page_obj.number }} of {{ paginator.num_pages }}.
+                    </span>
+
+                    {% if page_obj.has_next %}
+                        <a href="?page={{ page_obj.next_page_number }}" style="color: #13b521">Next</a>
+                    {% endif %}
+                </span>
+            </div>
+
+

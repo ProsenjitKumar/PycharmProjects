@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}<title>Home</title>{% endblock %}
+
+
+{% block content %}
+
+
+
+
+{% for product in products %}
+
+
+    <h3 class="m_1">{{ product.name }}</h3>
+    <p class="m_2">{{ product.price }}</p>
+     <div class="grid_img">
+       <div class="css3"><a href="{{ product.get_absolute_url }}">
+            <img src="{% if product.image %} {{ product.image.url }} {% else %} {% static 'images/down_arrow.png' %} {% endif %}" alt="..." style="height: 130px; width: auto">
+        </a></div>
+
+    </div>
+   <div class="price">{{ product.price }} Taka</div>
+
+
+{% endfor %}
+
+
+{% endblock %}

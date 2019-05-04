@@ -1,0 +1,9 @@
+
+<title>{{ object.name }}</title>
+
+{% if object.size %}
+    <h4 class="title"><a href="#"><b>{{ object.size }}</b></a></h4>
+{% endif %}
+{{ object.price }}
+{{ object.category }}
+<img src="{{ MEDIA_URL }}{{ object.image.url }}" style="width: 150px;height: 200px">
