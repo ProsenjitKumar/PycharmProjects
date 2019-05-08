@@ -56,12 +56,8 @@ class Window(QMainWindow):
         self.toolbar.addAction(exiteAction)
 
 
-
     def exitWindow(self):
         self.close()
-
-
-
 
 
 App = QApplication(sys.argv)

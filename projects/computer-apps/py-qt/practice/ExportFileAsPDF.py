@@ -33,7 +33,6 @@ class Window(QMainWindow):
     def CreateMenu(self):
 
 
-
         mainMenu = self.menuBar()
         fileMenu = mainMenu.addMenu('File')
         editMenu = mainMenu.addMenu('Edit')

@@ -9,7 +9,7 @@ class Window(QMainWindow):
     def __init__(self):
         super().__init__()
 
-        self.title = "PyQt5 QToolbar"
+        self.title = "PyQt5 QToolbar Printer"
         self.top = 200
         self.left = 500
         self.width = 680

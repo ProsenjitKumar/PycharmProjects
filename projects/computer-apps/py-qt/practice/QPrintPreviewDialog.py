@@ -43,7 +43,6 @@ class Window(QMainWindow):
         printAction.triggered.connect(self.printDialog)
         fileMenu.addAction(printAction)
 
-
         printPreviewAction = QAction(QIcon("printprev.png"), "Print Preview", self)
         printPreviewAction.triggered.connect(self.printpreviewDialog)
         fileMenu.addAction(printPreviewAction)
@@ -104,7 +103,6 @@ class Window(QMainWindow):
         if ok:
             self.textEdit.setFont(font)
 
-
     def colorDialog(self):
         color = QColorDialog.getColor()
         self.textEdit.setTextColor(color)
@@ -112,7 +110,6 @@ class Window(QMainWindow):
     def printDialog(self):
         printer = QPrinter(QPrinter.HighResolution)
         dialog = QPrintDialog(printer, self)
-
 
         if dialog.exec_() == QPrintDialog.Accepted:
             self.textEdit.print_(printer)

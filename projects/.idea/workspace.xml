@@ -2,16 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c49445f9-29a6-4bec-b0f9-7dee8186f612" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Ecommerce/products/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Personal/Shopping-Cart/shop/currentStock.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/OrderTheDevice/practice/gsa.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/computer-apps/py-qt/3printers/printer.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/program/practice/company-name/cmp-name.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Book/CleanBookLibrary" beforeDir="false" afterPath="$PROJECT_DIR$/../Book/CleanBookLibrary" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Book/clean-book-library" beforeDir="false" afterPath="$PROJECT_DIR$/../Book/clean-book-library" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../BookLatest" beforeDir="false" afterPath="$PROJECT_DIR$/../BookLatest" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../BookLibraryWithTemplate" beforeDir="false" afterPath="$PROJECT_DIR$/../BookLibraryWithTemplate" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../DataHead1" beforeDir="false" afterPath="$PROJECT_DIR$/../DataHead1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DataHeadOffice" beforeDir="false" afterPath="$PROJECT_DIR$/../DataHeadOffice" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Personal/BlogPost" beforeDir="false" afterPath="$PROJECT_DIR$/../Personal/BlogPost" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Personal/Ckeditor_uses" beforeDir="false" afterPath="$PROJECT_DIR$/../Personal/Ckeditor_uses" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Personal/Developent/prosenjitkumar" beforeDir="false" afterPath="$PROJECT_DIR$/../Personal/Developent/prosenjitkumar" afterDir="false" />
@@ -27,31 +25,6 @@
       <change beforePath="$PROJECT_DIR$/../Personal/Prosenjit" beforeDir="false" afterPath="$PROJECT_DIR$/../Personal/Prosenjit" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Personal/ProsenjitKumar" beforeDir="false" afterPath="$PROJECT_DIR$/../Personal/ProsenjitKumar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Personal/Saomoli" beforeDir="false" afterPath="$PROJECT_DIR$/../Personal/Saomoli" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Personal/Shopping-Cart/cart/cart.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Personal/Shopping-Cart/cart/cart.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Personal/Shopping-Cart/cart/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Personal/Shopping-Cart/cart/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Personal/Shopping-Cart/cart/templates/cart/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Personal/Shopping-Cart/cart/templates/cart/detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Personal/Shopping-Cart/cart/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Personal/Shopping-Cart/cart/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Personal/Shopping-Cart/ecommerce/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Personal/Shopping-Cart/ecommerce/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Personal/Shopping-Cart/orders/templates/orders/order/create.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Personal/Shopping-Cart/orders/templates/orders/order/create.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Personal/Shopping-Cart/shop/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Ecommerce/products/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Personal/Shopping-Cart/shop/admin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Personal/Shopping-Cart/shop/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Personal/Shopping-Cart/shop/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Personal/Shopping-Cart/shop/templates/base.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Personal/Shopping-Cart/shop/templates/checkout.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Personal/Shopping-Cart/shop/templates/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Personal/Shopping-Cart/shop/templates/login.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Personal/Shopping-Cart/shop/templates/register.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Personal/Shopping-Cart/shop/templates/shop.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Personal/Shopping-Cart/shop/templates/shop/base.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Personal/Shopping-Cart/shop/templates/shop/navbar.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Personal/Shopping-Cart/shop/templates/shop/product/detail.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Personal/Shopping-Cart/shop/templates/shop/product/list.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Personal/Shopping-Cart/shop/templates/single.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Personal/Shopping-Cart/shop/templates/single1.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Personal/Shopping-Cart/shop/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Personal/Shopping-Cart/shop/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Personal/Shopping-Cart/shop/views.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Personal/StripeSystem" beforeDir="false" afterPath="$PROJECT_DIR$/../Personal/StripeSystem" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Personal/djangoforbeginners" beforeDir="false" afterPath="$PROJECT_DIR$/../Personal/djangoforbeginners" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Personal/practicereactjs" beforeDir="false" afterPath="$PROJECT_DIR$/../Personal/practicereactjs" afterDir="false" />
@@ -60,6 +33,11 @@
       <change beforePath="$PROJECT_DIR$/../Personal/resume/HumanityWatch" beforeDir="false" afterPath="$PROJECT_DIR$/../Personal/resume/HumanityWatch" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../PracticePurpose" beforeDir="false" afterPath="$PROJECT_DIR$/../PracticePurpose" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/computer-apps/py-qt/practice/ExportFileAsPDF.py" beforeDir="false" afterPath="$PROJECT_DIR$/computer-apps/py-qt/practice/ExportFileAsPDF.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/computer-apps/py-qt/practice/QPrintDialog.py" beforeDir="false" afterPath="$PROJECT_DIR$/computer-apps/py-qt/practice/QPrintDialog.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/computer-apps/py-qt/practice/QPrintPreviewDialog.py" beforeDir="false" afterPath="$PROJECT_DIR$/computer-apps/py-qt/practice/QPrintPreviewDialog.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/computer-apps/py-qt/practice/QToolBar.py" beforeDir="false" afterPath="$PROJECT_DIR$/computer-apps/py-qt/practice/QToolBar.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../prosenjit-das" beforeDir="false" afterPath="$PROJECT_DIR$/../prosenjit-das" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -69,23 +47,26 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/OrderTheDevice/practice/worfPercentage.py">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/computer-apps/py-qt/3printers/printer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2250">
-              <caret line="153" selection-start-line="153" selection-end-line="153" />
+            <state relative-caret-position="1905">
+              <caret line="127" selection-start-line="127" selection-end-line="127" />
               <folding>
-                <element signature="e#1548#1561#0" expanded="true" />
+                <element signature="e#0#23#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/program/practice/company-name/cmp-name.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/computer-apps/py-qt/practice/QPrintPreviewDialog.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="69" column="3" selection-start-line="69" selection-start-column="3" selection-end-line="69" selection-end-column="3" />
+            <state relative-caret-position="310">
+              <caret line="110" column="51" selection-start-line="110" selection-start-column="51" selection-end-line="110" selection-end-column="51" />
+              <folding>
+                <element signature="e#0#23#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -134,10 +115,15 @@
         <option value="$PROJECT_DIR$/OrderTheDevice/practice/worfPercentage.py" />
         <option value="$PROJECT_DIR$/OrderTheDevice/practice/gsa.py" />
         <option value="$PROJECT_DIR$/program/practice/company-name/cmp-name.py" />
+        <option value="$PROJECT_DIR$/computer-apps/py-qt/practice/QToolBar.py" />
+        <option value="$PROJECT_DIR$/computer-apps/py-qt/practice/QPrintDialog.py" />
+        <option value="$PROJECT_DIR$/computer-apps/py-qt/practice/QPrintPreviewDialog.py" />
+        <option value="$PROJECT_DIR$/computer-apps/py-qt/practice/ExportFileAsPDF.py" />
+        <option value="$PROJECT_DIR$/computer-apps/py-qt/3printers/printer.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="27" />
     <option name="width" value="963" />
     <option name="height" value="870" />
@@ -160,20 +146,20 @@
             <path>
               <item name="projects" type="b2602c69:ProjectViewProjectNode" />
               <item name="projects" type="462c0819:PsiDirectoryNode" />
-              <item name="program" type="462c0819:PsiDirectoryNode" />
+              <item name="computer-apps" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="projects" type="b2602c69:ProjectViewProjectNode" />
               <item name="projects" type="462c0819:PsiDirectoryNode" />
-              <item name="program" type="462c0819:PsiDirectoryNode" />
-              <item name="practice" type="462c0819:PsiDirectoryNode" />
+              <item name="computer-apps" type="462c0819:PsiDirectoryNode" />
+              <item name="py-qt" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="projects" type="b2602c69:ProjectViewProjectNode" />
               <item name="projects" type="462c0819:PsiDirectoryNode" />
-              <item name="program" type="462c0819:PsiDirectoryNode" />
-              <item name="practice" type="462c0819:PsiDirectoryNode" />
-              <item name="company-name" type="462c0819:PsiDirectoryNode" />
+              <item name="computer-apps" type="462c0819:PsiDirectoryNode" />
+              <item name="py-qt" type="462c0819:PsiDirectoryNode" />
+              <item name="3printers" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -199,8 +185,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.cmp-name">
-    <configuration name="WidgetList" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.printer">
+    <configuration name="ExportFileAsPDF" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="projects" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -208,11 +194,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/computer-apps/py-qt/practice-with-qt-designer" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/computer-apps/py-qt/practice" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/computer-apps/py-qt/practice-with-qt-designer/WidgetList.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/computer-apps/py-qt/practice/ExportFileAsPDF.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -221,7 +207,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="cmp-name" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="QPrintDialog" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="projects" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -229,11 +215,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/program/practice/company-name" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/computer-apps/py-qt/practice" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/program/practice/company-name/cmp-name.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/computer-apps/py-qt/practice/QPrintDialog.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -242,7 +228,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="converter" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="QPrintPreviewDialog" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="projects" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -250,11 +236,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/computer-apps/py-qt/practice-with-qt-designer" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/computer-apps/py-qt/practice" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/computer-apps/py-qt/practice-with-qt-designer/converter.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/computer-apps/py-qt/practice/QPrintPreviewDialog.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -263,7 +249,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="gsa" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="QToolBar" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="projects" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -271,11 +257,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/OrderTheDevice/practice" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/computer-apps/py-qt/practice" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/OrderTheDevice/practice/gsa.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/computer-apps/py-qt/practice/QToolBar.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -284,7 +270,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="worfPercentage" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="printer" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="projects" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -292,11 +278,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/OrderTheDevice/practice" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/computer-apps/py-qt/3printers" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/OrderTheDevice/practice/worfPercentage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/computer-apps/py-qt/3printers/printer.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -307,11 +293,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.cmp-name" />
-        <item itemvalue="Python.gsa" />
-        <item itemvalue="Python.worfPercentage" />
-        <item itemvalue="Python.WidgetList" />
-        <item itemvalue="Python.converter" />
+        <item itemvalue="Python.printer" />
+        <item itemvalue="Python.ExportFileAsPDF" />
+        <item itemvalue="Python.QPrintPreviewDialog" />
+        <item itemvalue="Python.QPrintDialog" />
+        <item itemvalue="Python.QToolBar" />
       </list>
     </recent_temporary>
   </component>
@@ -331,7 +317,7 @@
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1600" height="873" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4979757" visible="true" weight="0.1769182" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4979757" visible="true" weight="0.18642993" />
       <window_info id="Structure" order="1" sideWeight="0.5020243" side_tool="true" weight="0.25204918" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="DB Browser" order="3" />
@@ -626,16 +612,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/OrderTheDevice/practice/worfPercentage.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2250">
-          <caret line="153" selection-start-line="153" selection-end-line="153" />
-          <folding>
-            <element signature="e#1548#1561#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/OrderTheDevice/Algorithm/cutCopyRenoveETC">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -653,10 +629,70 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/OrderTheDevice/practice/worfPercentage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1510">
+          <caret line="128" column="32" lean-forward="true" selection-start-line="128" selection-start-column="32" selection-end-line="128" selection-end-column="32" />
+          <folding>
+            <element signature="e#1548#1561#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/program/practice/company-name/cmp-name.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="69" column="3" selection-start-line="69" selection-start-column="3" selection-end-line="69" selection-end-column="3" />
+        <state relative-caret-position="420">
+          <caret line="28" column="17" lean-forward="true" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/computer-apps/py-qt/practice/ExportFileAsPDF.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="27" lean-forward="true" selection-end-line="155" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/computer-apps/py-qt/practice/QToolBar.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="655">
+          <caret line="57" selection-start-line="57" selection-end-line="57" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/computer-apps/py-qt/practice/QPrintDialog.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="44" selection-start-line="11" selection-start-column="44" selection-end-line="11" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/computer-apps/py-qt/practice/QPrintPreviewDialog.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="110" column="51" selection-start-line="110" selection-start-column="51" selection-end-line="110" selection-end-column="51" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/computer-apps/py-qt/3printers/printer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1905">
+          <caret line="127" selection-start-line="127" selection-end-line="127" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -1,0 +1,28 @@
+
+
+    <title>Registration</title>
+
+
+			<div style="margin:0 auto;width:85%;text-align:left" class="agileits-top">
+				<form id="user_form" method="post" action="" enctype="multipart/form-data">
+                            {% csrf_token %}
+                            {{ form.as_p }}
+					<div class="wthree-text">
+						<label class="anim">
+							<input type="checkbox" class="checkbox" required="">
+							<span>I Agree To The Terms & Conditions</span><br>
+						</label>
+						<div class="clear"> </div>
+					</div><br>
+                    <head>
+                        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+                    </head>
+                    <button class="button">Signup</button>
+				</form><br>
+{#				<p>Don't have an Account? <a href="{% url 'login' %}"><span style="color: #347e0b">Login Now!</span></a></p>#}
+			</div>
+
+
+
