@@ -24,7 +24,7 @@ beautifulsoup4==4.6.3
 billiard==3.5.0.5
 binwalk==2.1.2
 bitcoin==1.1.42
-bleach==3.0.2
+bleach==3.3.0
 blinker==1.4
 bokeh==1.0.2
 Brlapi==0.6.7
