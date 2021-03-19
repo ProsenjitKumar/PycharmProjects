@@ -133,7 +133,7 @@ djangocms-snippet==2.1.0
 djangocms-style==2.1.0
 djangocms-text-ckeditor==3.7.0
 djangocms-video==2.1.1
-djangorestframework==3.9.0
+djangorestframework==3.11.2
 djangorestframework-simplejwt==3.3
 dnspython==1.16.0
 docker==3.4.1
