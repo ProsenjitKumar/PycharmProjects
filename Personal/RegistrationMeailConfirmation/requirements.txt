@@ -96,7 +96,7 @@ pyqtdeploy==2.2
 pytest==3.10.0
 python-dateutil==2.7.5
 pytz==2018.5
-PyYAML==3.13
+PyYAML==5.4
 requests==2.18.4
 rsa==4.0
 scipy==1.1.0
