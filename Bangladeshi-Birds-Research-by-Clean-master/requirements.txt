@@ -274,7 +274,7 @@ pyflakes==2.0.0
 pygame==1.9.4
 pygeoip==0.3.2
 PyGetWindow==0.0.3
-Pygments==2.2.0
+Pygments==2.7.4
 PyGObject==3.30.4
 PyHamcrest==1.9.0
 PyJWT==1.7.0
