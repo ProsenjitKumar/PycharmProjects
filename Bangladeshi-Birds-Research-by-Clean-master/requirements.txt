@@ -207,7 +207,7 @@ louis==3.8.0
 lxml==4.2.5
 Mako==1.0.7
 Markdown==2.6.11
-markdown2==2.3.5
+markdown2==2.4.0
 MarkupSafe==1.0
 matplotlib==2.2.2
 maxminddb==1.4.1
