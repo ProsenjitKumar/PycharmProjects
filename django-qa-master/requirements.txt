@@ -1,4 +1,4 @@
-Django==2.1.7
+Django==2.2.24
 django-crispy-forms==1.7.2
 django-seed==0.1.9
 Faker==1.0.2
