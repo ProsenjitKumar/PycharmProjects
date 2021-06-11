@@ -378,7 +378,7 @@ wcwidth==0.1.7
 WeasyPrint==44
 webencodings==0.5.1
 websocket-client==0.53.0
-websockets==7.0
+websockets==9.1
 Werkzeug==0.14.1
 wfuzz==2.3.3
 whitenoise==4.1.2
