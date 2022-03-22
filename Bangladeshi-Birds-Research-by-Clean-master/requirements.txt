@@ -212,7 +212,7 @@ MarkupSafe==1.0
 matplotlib==2.2.2
 maxminddb==1.4.1
 mccabe==0.6.1
-mitmproxy==4.0.4
+mitmproxy==8.0.0
 mixer==6.0.1
 mock==2.0.0
 mongoengine==0.16.3
