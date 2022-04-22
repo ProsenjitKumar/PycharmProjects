@@ -5,7 +5,7 @@ html5lib==1.0.1
 Pillow==5.4.1
 psycopg2==2.7.7
 psycopg2-binary==2.7.7
-PyPDF2==1.26.0
+PyPDF2==1.27.5
 pytz==2018.9
 reportlab==3.5.13
 six==1.12.0
