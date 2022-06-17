@@ -328,7 +328,7 @@ rosetta==0.3
 rsa==4.0
 ruamel.yaml==0.15.34
 scipy==1.1.0
-Scrapy==1.5.1
+Scrapy==2.6.1
 SecretStorage==2.3.1
 selenium==3.141.0
 sentinels==1.0.0
