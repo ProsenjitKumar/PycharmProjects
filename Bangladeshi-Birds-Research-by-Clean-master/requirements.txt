@@ -204,7 +204,7 @@ ldap3==2.4.1
 loggerFactory==0.0.4
 Lookupy==0.2
 louis==3.8.0
-lxml==4.2.5
+lxml==4.9.1
 Mako==1.0.7
 Markdown==2.6.11
 markdown2==2.3.5
