@@ -189,7 +189,7 @@ jedi==0.12.1
 Jinja2==2.10
 jsonschema==2.6.0
 jupyter-core==4.4.0
-jwcrypto==0.6.0
+jwcrypto==1.4
 kaitaistruct==0.8
 Keras==2.2.4
 Keras-Applications==1.0.6
