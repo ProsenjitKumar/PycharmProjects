@@ -80,7 +80,7 @@ pbr==5.1.0
 Pillow==5.3.0
 pipenv==2018.10.13
 pluggy==0.8.0
-protobuf==3.6.1
+protobuf==3.18.3
 psycopg2-binary==2.7.5
 py==1.7.0
 pyasn1==0.4.4
